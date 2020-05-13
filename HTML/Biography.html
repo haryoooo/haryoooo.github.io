@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/Biography.css">
+    <title>Biography </title>
+    </head>
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top bg-dark navbar-dark">
+      <a href="../HTML/Mainpage.html"><img src="../PIC/letter-h.png" width="40" height="40" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/Biography.html">Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/Experience.html">Experience</a>
+          </li>    
+        </ul>
+      </div>  
+    </nav>
+    <br>   
+    <!-- Jumbotron -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="jumbotron jumbotron-fluid justify-content-center">
+            <div class="container">
+                <h1 class="display-3">Welcome to Biography Page</h1>
+                <p class="lead">"This is Biography of Haryo Novianto"</p>
+        </div>
+      </div>  
+    <!-- End Jumbotron -->
+    <!-- Content -->
+    <div class="container">
+    <div class="row content">
+            <div class="col md-6 mr-5">
+              <img src="../PIC/bdg pic2.jpeg" width="550px" class="rounded" alt="">
+              </div>
+                <div class="col md-5">
+                  <h3>Bandung</h3>
+                  <p>
+                    Talk about my Education, I was graduated from Telkom University Bandung at November 2017 after 3 years at college. 
+                    I always had a great moments traveling around Bandung city, Bandung is my favorite City!</p>
+                  </div>
+                </div>  
+            <div class="row content">
+            <div class="col md-5 mr-5">
+              <h3>Jakarta</h3>
+                <p>
+                  After graduate from telkom, i was continuing my study at Jakarta while i work in there.
+                  Despite the traffic, Jakarta is fun city to travel. There's so many culinary and shopping place in there!</p>
+                </div>
+              <div class="col md-6">
+                <img src="../PIC/jkt pic.jpeg" width="550px" class="rounded" alt="">
+          </div>
+        </div>
+        </div>
+        <hr>
+    <!--Content -->
+    <!-- Gallery -->
+    <div class="Gallery">
+    <div class="container">
+      <h4>Image Gallery</h1>
+          <div class="row">
+            <div class="col">
+              <img src="../PIC/bdg.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor rounded">
+            </div>
+            <div class="col">
+              <img src="../PIC/bdg 2018.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor rounded">
+            </div>
+            <div class="col">
+              <img src="../PIC/skate.JPG" style="width:100%; height: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor rounded">
+            </div>
+            <div class="col">
+              <img src="../PIC/binus.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor rounded">
+        </div>
+      </div>
+            <div class="row">
+            <div class="col">
+              <img src="../PIC/Innograph.JPG" style="width:100%; height: 100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor rounded">
+            </div>
+            <div class="col">
+              <img src="../PIC/jaksel.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor rounded">
+            </div>
+            <div class="col">
+              <img src="../PIC/46.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor rounded">
+            </div>
+            <div class="col">
+              <img src="../PIC/Puncak.JPG" style="width:100%; height: 100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor rounded">
+        </div>
+      </div>
+      </div>
+    </div>
+
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="../PIC/bdg.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="../PIC/bdg 2018.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="../PIC/skate.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="../PIC/binus.JPG" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="../PIC/Innograph.JPG" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="../PIC/jaksel.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="../PIC/46.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="../PIC/Puncak.JPG" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      </div>
+    </div>
+    <hr>
+    <!--Gallery-->
+    <!-- Quotes -->
+      <div class="container">
+          <div class="row justify-content-center Quotes">
+              <div class="col-lg-5 mt-5">
+                          <h5>"Success is not defined by how many times you failed but by how many times you learned your own failure"</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="row justify-content-center mt-2 testi">
+                <div class="col-6 justify-content-center d-flex">
+                    <figure class="figure">
+                    <img src="../PIC/haryo2.JPG" class="figure-img img-fluid rounded-circle hover-shadow cursor" alt="">
+                    <figcaption class="figure-caption text-center">
+                    <h6>Haryo Novianto</h6>
+                    <span>Digital Product Development</span>
+                  </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      <!-- End Quotes -->
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center pt-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h7>Follow me on</h7>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col">
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+      </div>
+    </footer> 
+    <!-- End Footer -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Optional JavaScript -->
+        <script src="../JS/Biography.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html> 
