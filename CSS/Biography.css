@@ -1,3 +1,4 @@
+/* Scroll Top */ 
 #myBtn {
     display: none;
     position: fixed;
@@ -17,7 +18,7 @@
 #myBtn:hover {
     background-color: #555;
 }
-
+/* Scroll Top */
 
 h1 {
     font-weight: 200;
@@ -25,14 +26,9 @@ h1 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
-h4 {
+h2 {
     font-weight: 400;
     text-align: center;
-}
-
-h5 {
-    font-weight: 300;
-    font-style: italic;
 }
 
 .jumbotron {
@@ -64,9 +60,40 @@ h5 {
 
 /* End of Content */
 
+/* Hobby */
+
+.hobby {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.hobby .row {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card {
+    transition: transform .2s;
+}
+
+.card:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+/* End of Hobby */
+
+
 /* Gallery */
 
 .Gallery {
+    margin-bottom: 50px;
+    margin-top: 50px;
     padding-bottom: 50px;
     padding-top: 20px;
 }
@@ -189,8 +216,16 @@ h5 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-/* Gallery */
+/* End of Gallery */
 
+/* Quotes */
+
+.Quotes h5 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Quotes */
 
 /* Testi */
 .testi img {
@@ -199,7 +234,7 @@ h5 {
 
 .testi h6 {
     color: black;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .testi .figure-caption {
