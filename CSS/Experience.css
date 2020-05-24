@@ -1,0 +1,172 @@
+.jumbotron {
+    height: 650px;
+    background-image: url();
+}
+
+.jumbotron h2 {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.jumbotron img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Button */
+.btn {
+    border-radius: 40px;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.progress {
+    margin: -15px 20px 0px 20px;
+}
+
+/* End of Button */
+
+/* Grid */
+
+.grid-col {
+    margin-top: 100px;
+}
+
+.grid-col img {
+    margin: 50px 0px 20px 50px;
+    justify-content: center;
+}
+
+.grid-col ul li {
+    font-weight: 300;
+    margin: 5px;
+}
+
+.grid-col h3 {
+    margin: 50px;
+    font-weight: 500;
+}
+
+.grid-col h4 {
+    margin: 50px 0px 30px 50px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.grid-col h6 {
+    margin: 30px 20px 30px 50px;
+    font-weight: 400;
+}
+
+.grid-col p {
+    margin: 40px auto 30px 50px;
+    font-weight: 300;
+}
+
+.grid-col .cols1,
+.grid-col .cols3 {
+    border: solid 1px black;
+    width: 30%;
+    height: 600px;
+    margin: 0px 20px 50px 50px;
+}
+
+.grid-col .cols2,
+.grid-col .cols4 {
+    border: solid 1px black;
+    width: 55%;
+    height: auto;
+    margin: 0px 20px 50px 50px;
+}
+
+.grid-col .cols2,
+.grid-col .cols3 {
+    background-image: url(../PIC/pattern.png);
+}
+
+.grid-col .cols5 {
+    border: solid 1px black;
+    width: 91%;
+    height: auto;
+    margin: 0px 50px 50px 50px;
+}
+
+
+/* Phone Display Flex */
+@media (max-width: 768px) {
+    .grid-col .cols1,
+    .grid-col .cols2,
+    .grid-col .cols3,
+    .grid-col .cols4,
+    .grid-col .cols5 {
+        width: 100%;
+        bottom: 16px;
+    }
+}
+/* End of Phone Display Flex */
+
+/* Tablet Display Flex */
+
+@media (max-width: 1024px) {
+    .grid-col {
+        display: block;
+    }
+    .grid-col .cols1,
+    .grid-col .cols2,
+    .grid-col .cols3,
+    .grid-col .cols4,
+    .grid-col .cols5 {
+        display: inline-block;
+        width: 45%;
+    }
+    .grid-col .cols1,
+    .grid-col .cols2,
+    .grid-col .cols3,
+    .grid-col .cols4,
+    .grid-col .cols5 {
+        margin-bottom: 16px;
+    }
+}
+
+/* End of Tablet Display Flex */
+
+/* Circle around content */
+.circle {
+    padding: -30px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+/* The circles on the Grid */
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid;
+    top: 3px;
+    margin-left: -12px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+/* End of Grid */
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.fa {
+    color: black;
+    margin: 5px;
+}
