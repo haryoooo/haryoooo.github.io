@@ -1,0 +1,683 @@
+
+/* ======== Mainpage ========  */
+
+.Mainpage .jumbotron {
+  height: 1000px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-image: url(../PIC/frontpage2.jpg);
+  margin-bottom: 0px;
+}
+
+.Mainpage .jumbotron h1 {
+  margin-top: 200px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.Mainpage .jumbotron p {
+  margin-top: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.tombol {
+  margin-top: 10px;
+  border-radius: 40px;
+}
+
+.footer .fa {
+    color:white;
+    margin: 5px;
+}
+
+/* ======== End Of Mainpage ======== */
+
+
+/* ======= Biography Page ======== */
+
+/* Scroll Top */ 
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* End of Scroll Top */
+
+.hobby h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.Biography .jumbotron {
+  height: 600px;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 250px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  background-image: url(../PIC/fog.jpg);
+}
+
+/* H1 Jumbotron Animation */
+
+.ml11 {
+font-weight: 500;
+font-family: sans-serif;
+font-size: 3.2em;
+}
+
+.ml11 .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.1em;
+padding-right: 0.05em;
+padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+opacity: 0;
+position: absolute;
+left: 0;
+height: 100%;
+width: 3px;
+background-color: #fff;
+transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+top: 0; 
+left: 0;
+}
+
+.ml11 .letter {
+display: inline-block;
+line-height: 1em;
+}
+
+/* End H1 Jumbotron Animation */
+
+/* Content */
+
+.content {
+  margin: 150px 50px 100px 0px;
+}
+
+.content p {
+  font-weight: 100;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.content img:hover {
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+
+/* End of Content */
+
+/* Hobby */
+
+.hobby {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.hobby h2 {
+font-weight: 400;
+text-align: center;
+}
+
+.hobby .row {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.hobby .row .col {
+margin-top: 30px;
+}
+
+/* End of Hobby */
+
+
+/* Gallery */
+
+.Gallery {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.Gallery h2 {
+font-weight: 400;
+text-align: center;
+}
+
+.Gallery .row > .col {
+  padding: 0 8px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.Gallery .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.Gallery .col {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.Gallery img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* End of Gallery */
+
+/* Quotes */
+
+.Quotes h5 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Quotes */
+
+/* Testi */
+.testi img {
+  width: 180px;
+}
+
+.testi h5 {
+  color: black;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.testi .figure-caption {
+  margin-bottom: 50px;
+}
+
+
+/* End of Testi */
+
+/* ======== End Of Biography Page ======== */
+
+
+/* ======== Resume Page ======== */
+
+.nav-link {
+ text-transform: uppercase; 
+ font-size: 14px;
+}
+
+.Resume .jumbotron {
+    height: 650px;
+    background-color: darkslategrey;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+    display: inline-block;
+    border: 1px solid #f8f8f8;
+    padding: 5px 20px;
+    margin-top: 100px;
+}
+
+.box h1 {
+    color: #fff;
+}
+
+.main-title {
+    margin: 30px 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.tagline {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.holder {
+    border: 1px solid #aaa;
+    padding: 50px 30px 100px; 
+    margin-bottom: 50px;
+    word-wrap: break-word;
+  }
+
+/* Button */
+
+.btn {
+    border-radius: 40px;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* End of Button */
+
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+.about h4, h6 {
+    font-family: 'Lato', sans-serif;
+    margin: 30px 0;
+    color: #101010; 
+}
+
+.introduce h6 {
+    font-family: 'Lato', sans-serif;
+    margin: 30px 0;
+    color: #101010; 
+}
+
+.Education h4, h6 {
+    font-family: 'Lato', sans-serif;
+    margin: 30px 0;
+    color: #101010; 
+}
+
+.Experience h4, h6 {
+    font-family: 'Lato', sans-serif;
+    margin: 30px 0;
+    color: #101010; 
+}
+
+.exp {
+  list-style: circle;
+}
+
+.exp li{
+  margin-top: 20px;
+}
+
+
+.contact li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Icon and Tooltip */
+
+ion-icon {
+    font-size: 21px;
+}
+
+.cv-download {
+    float: right;
+    margin-right: 20px;
+    color: #101010;
+}
+
+.tooltip-cl {
+    display: inline;
+    position: relative;
+}
+
+.tooltip-cl:hover:after {
+    background: #101010;
+    bottom: 35px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    content: attr(data-tooltip);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 110px;
+}
+
+/* End of icon and tooltip */
+
+/* Socmed */
+
+.socmed {
+    display: inline-block;
+}
+
+.socmed a {
+    margin-right: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    color: #101010;
+}
+
+.socmed a:hover {
+    text-decoration: none
+}
+
+/* End of socmed */
+
+/* Progress Bar Animation */
+
+.progress {
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.progress-bar {
+    width: 0;
+    animation: progress 2.5s ease-in-out forwards;
+} 
+  
+ @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } 
+ @keyframes show  {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/* End of Progress Bar Animation */
+
+/* Card */
+
+.card-text {
+    text-align: justify;
+    font-family: Montserrat, sans-serif;
+}
+
+.card {
+    transition: transform .2s;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* End of Card */
+
+/* Circle around content */
+.circle {
+    padding: -15px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+.circle h5 {
+    margin-top: 50px;
+  }
+
+/* The circles on the Grid */
+.circle::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid;
+    top:0px;
+    margin-left: -43px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+/* Input Contact */
+
+.group { 
+    position:relative; 
+    margin-bottom:45px;
+}
+
+
+input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:inline-block;
+    width:250px;
+    border: none;
+    border-bottom:1px solid #757575;
+}
+
+input:focus 	{ outline:none; }
+  
+/*  LABEL */
+
+  label {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+/* active state */
+
+  input:focus ~ label, input:valid ~ label 	{
+    top:-20px;
+    font-size:14px;
+    color:rgba(191, 191, 191, 1);
+  }
+  
+/*  BOTTOM BARS  */
+
+  .bar 	{ 
+    position:relative; 
+    display:block; 
+    width:500px; 
+  }
+
+  .bar:before, .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:rgba(191, 191, 191, 1); 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER */
+  .highlight {
+    position:absolute; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+    input:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+
+
+/* End of Input Contact */
+
+
+/* Footer Experience */
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.fa {
+    color: black;
+    margin: 5px;
+}
+
+/* End of footer Experience */
+
+
+/* ======== End Of Resume Page ======== */
