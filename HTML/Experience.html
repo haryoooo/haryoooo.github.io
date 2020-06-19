@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="../CSS/ionicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Experience</title>
       </head>
@@ -29,9 +29,9 @@
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link active" href="../HTML/Mainpage.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="../HTML/Biography.html">Biography</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
-          <a class="nav-item nav-link" href="#">Portfolio</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="../HTML/Experience.html">Resume</a>
+          <a class="nav-item nav-link" href="#Portfolio">Portfolio</a>
+          <a class="nav-item nav-link" href="#Contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -51,12 +51,13 @@
     </div>  
     <!-- End of Jumbotron -->  
 
-    <!-- Grid -->  
+    <!-- Grid -->
+    <section id="about">
+    <!-- Big Section Background Title -->
     <div class="container">
-
-      
         <div class="row mt-5">
-          <div class="id col-sm-4">
+          <div class="col-sm-4">
+            <h1 class="section-big-title" data-aos="fade-right">About</h1><!-- /. large title -->
               <div class="holder">
                     <img src="../PIC/haryo2.jpg"  width="60%" class="rounded-circle hover-shadow">
 
@@ -79,7 +80,7 @@
             <div class="about col-sm-8">
               <div class="holder">
                 <div class="container">
-                <h3>About Me</h3>
+                <h4>About Me</h4>
                 <p>
                     A guy who never tired of learning something new!
                 </p>
@@ -94,10 +95,13 @@
             </div>
           </div>
         </div>
+      </div>
+    </section><!-- /.about -->
 
-          
+        <div class="container">
           <div class="row">
             <div class="col-sm-4 Skill">
+              <h1 class="section-big-title" data-aos="fade-right">Education</h1><!-- /. large title -->
               <div class="holder">
 
                 <div class="container">
@@ -125,9 +129,9 @@
                 </div> 
 
               <div class="mt-5">
-                <ion-icon name="chevron-back-outline"></ion-icon>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-                </div>
+                    <i class="fa fa-chevron-left"></i>
+                    <i class="fa fa-chevron-right"></i>
+              </div>
                 
                 </div>
               </div>  
@@ -136,11 +140,21 @@
           <div class="col-sm-8 Education">
             <div class="holder">
               <h3>Education</h3>
+
+              <div class="time-item">
+                <div class="time-year" data-aos="fade-left">
+                    2014-2017
+                </div>
                 <div class="circle">
                   <h5>Telkom University</h5></div>
                   <h6>Major Computer Engineering</h6>
                   <p>GPA : 3.07</p>
+              </div>
                 
+              <div class="time-item">
+                <div class="time-year" data-aos="fade-left">
+                    2017-2019
+                </div>
                 <div class="circle">
                 <h5>Binus University</h5></div>
                 <h6>Major Information System</h6>
@@ -148,13 +162,21 @@
               </div>
             </div>
           </div>
+        </div>
 
             <div class="row">
               <div class="col Experience" style="word-break: keep-all;">
+                <h1 class="section-big-title" data-aos="fade-right">Experience</h1><!-- /. large title -->
                 <div class="holder">
                   <h3>Work Experience</h3>
+                  <div class="time-item">
+                    <div class="time-year" data-aos="fade-left">
+                        July 2018 - October 2018
+                    </div>
                   <div class="circle">
-                  <h5>PT. Putra Perdana International</h5></div>
+                  <h5>PT. Putra Perdana International</h5>
+                
+                </div>
                   <h6>System Engineer</h6>
                   <ul class="exp">
                     <li>Deep learn and exploring about Company Product “Extrahop”</li>
@@ -162,7 +184,12 @@
                     <li>Developing Internal Website that integrated the company project using an API integration</li>
                     <li>Operate SQL database InnoDB system with Linux Environment</li>
                   </ul>
+                  </div>
 
+                  <div class="time-item">
+                    <div class="time-year" data-aos="fade-left"> 
+                        Februari 2019 - Present
+                    </div>
                   <div class="circle">
                   <h5>PT. Innovasi Sarana Grafindo</h5></div>
                   <h6>Manufacturing Staff</h6>
@@ -174,14 +201,20 @@
                     <li>Review QoC Form list Digital Product based on product development to maintain the quality of company product</li>
                     <li>Operate company CMS Web Apps to deploy content for digital signage product</li>
                   </ul>
+                  </div>
 
                 </div>
               </div>
             </div>
+        </div>
               
-
-        <div class="holder">
-          <h3 style="text-align: center;">Portfolio</h3>
+    <section id="Portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="section-big-title" data-aos="fade-right">Portfolio</h1><!-- /. large title -->
+            <div class="holder">
+            <h3 style="text-align: center;">Portfolio</h3>
 
 
         <div class="container">
@@ -221,10 +254,17 @@
                 </div>
               </div>
             </div>
-
+          </div>
+        </div>
+      </div>
+    </section>
           
+
+    <section id="Contact">
+          <div class="container">
             <div class="row">
               <div class="col-sm-4">
+                <h1 class="section-big-title" data-aos="fade-right" >Contact</h1><!-- /. large title -->
                 <div class="holder">
                 <h3>Let's Talk</h3>
                 <ul class="contact pl-0 mt-4">
@@ -263,6 +303,13 @@
                     <span class="bar"></span>
                     <label>Email</label>
                   </div>
+
+                  <div class="group">      
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Message</label>
+                  </div>
                   
                 </form>
                 </div>
@@ -297,6 +344,7 @@
             </div>
           </div>
         </div>
+        </section>
       
       
       
@@ -309,7 +357,9 @@
     <!------ Include the above in your HEAD tag ---------->
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Optional JavaScript -->
-      <script src="../JS/Experience.js"></script>
+      <script src="../JS/scripts.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
       <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

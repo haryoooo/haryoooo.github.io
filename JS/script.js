@@ -1,106 +1,151 @@
-/* Scroll Top */
+/*
+    Template Name: Classic - Minimal CV/Personal Portfolio
+    Version: 1.0
+    Author: BulkStudio
+    Author URI: http://bulkstudio.com
+    Description: CV, Resume, Portfolio Minimal HTML5 Template
+*/
 
-//Get the button
-var mybutton = document.getElementById("myBtn");
+(function($) {
 
-// When the user scrolls down 2500px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    "use strict";
 
-function scrollFunction() {
-  if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    /* ---- Textillate ---- */
+    $('.til').textillate({
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+        // enable looping
+        loop: true,
+        in : {
+            effect: 'fadeIn',
+            delayScale: 1.5,
+            delay: 150,
+            shuffle: true
+        },
+        out: {
+            effect: 'fadeOut',
+            delayScale: 1.5,
+            delay: 150,
+            shuffle: true
+        }
+    });
 
-/* End of Scroll Top */
+    /* ---- Owl Carousel Testimonial ---- */
+    $(".testi-holder").owlCarousel({
+        singleItem: true,
+        navigationText: [
+            '<span class="ion-ios-arrow-left"></span>',
+            '<span class="ion-ios-arrow-right"></span>'
+        ],
+        navigation: true,
+        pagination: false,
+        transitionStyle: "fade"
+    });
 
-/* Animation H1 Jumbotron */
+    /* ---- Owl Carousel Skill ---- */
+    $(".skill-holder").owlCarousel({
+        singleItem: true,
+        navigationText: [
+            '<span class="ion-ios-arrow-left"></span>',
+            '<span class="ion-ios-arrow-right"></span>'
+        ],
+        navigation: true,
+        pagination: false,
+        addClassActive : true,
+        afterMove: function() {
+            if($(this).find('active')) {
+                $('.active .skillbar').each(function() {
+                    if (!$(this).find('.skillbar-bar').hasClass('to-animate')) {
+                        $(this).find('.skillbar-bar').addClass('to-animate');
+                        animateSkill(950);
+                    }
+                });   
+            }
+        }
+    });
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml11 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+    /* ---- Owl Carousel Portfolio ---- */
+    $(".port-holder").owlCarousel({
+        items: 3,
+        itemsDesktop: false,
+        itemsDesktopSmall: [991, 2],
+        itemsTablet: [768, 1],
+        itemsTabletSmall: false,
+        itemsMobile: false, //[479,1], 
+        navigationText: [
+            '<span class="ion-ios-arrow-left"></span>',
+            '<span class="ion-ios-arrow-right"></span>'
+        ],
+        navigation: true,
+        pagination: false
+    });
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml11 .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ml11 .line',
-    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100
-  }).add({
-    targets: '.ml11 .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: (el, i) => 34 * (i+1)
-  }).add({
-    targets: '.ml11',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+    /* ---- Magnific Popup ---- */
+    $('.popup-it').magnificPopup({
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close"><i class="ion-ios-close-empty"></i></button>'
+    });
 
-/* End of Animation H1 Jumbotron */
+    /* ---- Magnific Bug Workaround ---- */
+    $(document).on('click', '.mfp-close', function(e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
 
-/* Lightbox Gallery */
+    /* ---- Facts Counter ---- */
+    $('.counter-data').counterUp({
+        delay: 10,
+        time: 2000
+    });
 
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
+    /* ---- Twitter, Change username ---- */
+    $('.tweet').twittie({
+        username: 'envato', // Change username
+        count: 1,
+        dateFormat: '%d/%b/%y',
+        template: '<strong class="date">{{date}}</strong> - {{tweet}} - {{screen_name}} ',
+        apiPath: 'assets/js/api/tweet.php'
+    });
 
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+    /* ---- Menu Toggle Class ---- */
+    $('.menu-holder').on('click', function() {
+        $('.menu').toggleClass('menu-active');
+    });
 
-var slideIndex = 1;
-showSlides(slideIndex);
+    /* ---- One Page Nav ---- */
+    $('.menu-ul').onePageNav({
+        currentClass: 'current',
+        easing: 'swing'
+    });
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    /* ---- Skill Scroll To Run ---- */
+    var loop = 0;
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    var oTop = $('.skill-area').offset().top - window.innerHeight;
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+    $(window).on('scroll', function() {
 
-/* End Of Lightbox Gallery */
+        var pTop = $(window).scrollTop();
 
+        if (pTop >= oTop && loop == 0) {
+            animateSkill(950);
+        }
+    });
+
+    function animateSkill(delay) {
+        $('.skillbar').each(function() {
+
+            $(this).find('.to-animate').animate({
+
+                width: $(this).attr('data-percent')
+
+            }, delay);
+
+            delay += 350;
+        });
+
+        loop = 1;
+    }
+
+    /* ---- WOW JS ---- */
+    new WOW().init();
+
+})(jQuery);
