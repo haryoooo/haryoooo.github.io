@@ -1,0 +1,19 @@
+BUG :
+
+1. Mainpage 
+	- Zoom Out
+	- Image load efficiency
+	- Toggle Navigation for Guide button
+
+2. Biography 
+	- Code efficiency
+	- Image load efficiency
+
+3. Resume 
+	- Image load efficency
+	- Icons on every holder
+	- Responsive AOS Mobile and Tablet Version
+	- Percentage on Skills
+	- Manage CSS Z-index AOS on Education
+	- Message Textarea On Contacts
+	- Animation Button Send message

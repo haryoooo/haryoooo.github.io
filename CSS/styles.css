@@ -577,6 +577,11 @@ img.hover-shadow {
     margin-bottom: 50px;
   }
 
+.skill-holder {
+    border: none;
+    margin-bottom: 50px;
+  }
+
 /* Button */
 
 .btn {
@@ -701,6 +706,23 @@ ion-icon a:hover {
   }
 
 /* End of Progress Bar Animation */
+
+
+.text-bar {
+  margin: 20px 0 20px 0;
+}
+
+.Left {
+  text-align: left;
+  color: #aaa;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.Right {
+  float: right;
+}
+
 
 /* Card */
 
