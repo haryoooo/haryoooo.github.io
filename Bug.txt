@@ -12,4 +12,4 @@ BUG :
 3. Resume 
 	- Image load efficency
 	- Responsive fill in Contacts
-	- Animation Button Send message
+	- API Twitter latest tweet

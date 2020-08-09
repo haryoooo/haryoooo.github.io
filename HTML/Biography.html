@@ -52,7 +52,7 @@
 
             <div class="row content justify-content-around flex-md-row-reverse align-items-top">
               <div class="col-md-5">
-                <img src="../PIC/jkt pic.jpeg" width="600px" class="rounded img-fluid mb-4" alt="">
+                <img src="../PIC/jkt pic.jpeg" width="600px" class="rounded img-fluid" alt="">
               </div>
 
             <div class="col-md-5">
@@ -73,77 +73,93 @@
         <div class="col-lg-12">
 
         <!-- Hobby row 1 -->
-        <div class="row">
+        <div class="row pt-5">
           <div class="col-md">
-            <div class="card" style="width: 18rem;">
-              <img src="../PIC/game.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Gaming</h5>
-                <p class="card-text">Open World is my favorite type of game</p>
-              </div>
+          <div class="flip">
+            <div class="front" style="background-image: url(../PIC/game.jpeg)">
+               <h3 class="text-shadow">GAMING</hi>
             </div>
+            <div class="back">
+               <h3>Gaming</h3>
+               <p>Gaming is like something i always do to refresh my mind, and Open World is my favorite type of game</p>
+            </div>
+          </div>
+          </div>
+        
+          <div class="col-md">
+          <div class="flip">
+              <div class="front" style="background-image:url(../PIC/skate.JPG) ">
+                <h3 class="text-shadow">SKATEBOARDING</hi>
+              </div>
+              <div class="back">
+                <h3>Skateboarding</h3>
+                <p>Skateboarding is my favorite sports because imo it's really fun and challenging sport</p>
+              </div>
+          </div>
           </div>
 
           <div class="col-md">
-            <div class="card" style="width: 18rem;">
-            <img src="../PIC/skate.JPG" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Skateboarding</h5>
-              <p class="card-text">Skateboarding is really fun and challenging sport</p>
-            </div>
+          <div class="flip">
+              <div class="front" style="background-image: url(../PIC/development.jpeg)">
+                <h3 class="text-shadow">DEVELOPMENT</hi>
+              </div>
+              <div class="back">
+                <h3>Web Development</h3>
+                <p>Web Developing is kinda fun especially when you love to learn</p>
+              </div>
           </div>
           </div>
+          <!-- End of hobby row 1 -->
 
-          <div class="col-md">
-            <div class="card" style="width: 18rem;">
-              <img src="../PIC/web code.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text">Web Developing is kinda fun especially when u love to learn</p>
-              </div>
+        <!-- Hobby Row 2 -->
+        <div class="col-md pt-5">
+        <div class="flip">
+            <div class="front" style="background-image:url(../PIC/movie.jpg) ">
+               <h3 class="text-shadow">MOVIES</hi>
+            </div>
+            <div class="back">
+               <h3>Movies</h3>
+               <p>My favorite movies genre is thriller and mystery</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md pt-5">
+          <div class="flip">
+            <div class="front" style="background-image: url(../PIC/learn.jpg)">
+               <h3 class="text-shadow">LEARNING</hi>
+            </div>
+            <div class="back">
+               <h3>Learning</h3>
+               <p>I always willing to learn something new until i can't learn again</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md pt-5">
+        <div class="flip">
+            <div class="front" style="background-image: url(../PIC/travel.jpg)">
+               <h3 class="text-shadow">TRAVELING</hi>
+            </div>
+            <div class="back">
+               <h3>Traveling</h3>
+               <p>Travel into the new place is always exciting moment for me</p>
+            </div>
             </div>
           </div>
-          <!-- End of Hobby row 1 -->
-
-          <!-- Hobby row 2 -->
-            <div class="col-md">
-              <div class="card" style="width: 18rem;">
-                <img src="../PIC/movie.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Movies</h5>
-                  <p class="card-text">My favorite movies genre is thriller and mystery</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-md">
-              <div class="card" style="width: 18rem;">
-              <img src="../PIC/learn.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Learning</h5>
-                <p class="card-text">I always willing to learn something new until i can't learn again</p>
-              </div>
-            </div>
-            </div>
-  
-            <div class="col-md">
-              <div class="card" style="width: 18rem;">
-                <img src="../PIC/travel.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Traveling</h5>
-                  <p class="card-text">Travel into the new place is always exciting moment for me</p>
-                </div>
-              </div>
-            </div>
             <!-- End of Hobby row 2 -->
+
           </div>
         </div>
       </div>
     </div> 
   </div>
   <hr>
-    <!-- End Hobby -->      
+  <!-- End Hobby -->  
+    
+    
     <!-- Gallery -->
+  <div class="container">
     <div class="Gallery">
       <h2>Image Gallery</h2>
           <div class="row">
@@ -185,51 +201,72 @@
           <div class="mySlides">
             <div class="numbertext">1 / 8</div>
             <img src="../PIC/bdg.JPG" style="width:100%">
+            <div class="caption-container">
+                  <p id="caption">Bandung, 2018</p>
+            </div>
           </div>
       
           <div class="mySlides">
             <div class="numbertext">2 / 8</div>
             <img src="../PIC/bdg 2018.JPG" style="width:100%">
+            <div class="caption-container">
+              <p id="caption">Bandung, 2018</p>
+            </div>
           </div>
       
           <div class="mySlides">
             <div class="numbertext">3 / 8</div>
             <img src="../PIC/haryo sk8.JPG" style="width:100%">
+            <div class="caption-container">
+              <p id="caption">Bandung, 2017</p>
+            </div>
           </div>
           
           <div class="mySlides">
             <div class="numbertext">4 / 8</div>
             <img src="../PIC/binus.JPG" style="width:100%">
+            <div class="caption-container">
+              <p id="caption">Jakarta, 2018</p>
+            </div>
           </div>
 
           <div class="mySlides">
             <div class="numbertext">5 / 8</div>
             <img src="../PIC/adit's.JPG" style="width:100%">
+            <div class="caption-container">
+              <p id="caption">Tangerang, 2018</p>
+            </div>
           </div>
       
           <div class="mySlides">
             <div class="numbertext">6 / 8</div>
             <img src="../PIC/jaksel.jpg" style="width:100%">
+            <div class="caption-container">
+              <p id="caption">Jakarta, 2019</p>
+            </div>
           </div>
       
           <div class="mySlides">
             <div class="numbertext">7 / 8</div>
             <img src="../PIC/46.JPG" style="width:100%">
+            <div class="caption-container">
+              <p id="caption">Jakarta, 2019</p>
+            </div>
           </div>
           
           <div class="mySlides">
             <div class="numbertext">8 / 8</div>
             <img src="../PIC/Puncak.JPG" style="width:100%">
+            <div class="caption-container">
+              <p id="caption">Puncak, 2019</p>
+            </div>
           </div>
           
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
       
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-      
       </div>
+    </div>
     </div>
     <hr>
     <!--Gallery-->
@@ -242,7 +279,7 @@
               </div>
             </div>
 
-              <div class="row justify-content-center testi">
+              <div class="row justify-content-center testi mt-3">
                 <div class="col-md-6 justify-content-center d-flex">
                     <figure class="figure">
                     <img src="../PIC/haryo2.JPG" class="rounded-circle hover-shadow cursor" alt="">
