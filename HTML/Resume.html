@@ -73,10 +73,10 @@
               
                 <h4> Latest Tweet </h4>
                 <p>This is my latest tweet</p>
-              
+                
+                </div>
               </div>
             </div>
-          </div>
 
             <div class="col-lg-4">
               <div class="holder texture">
@@ -121,10 +121,40 @@
                                 <a href="#" class="fa fa-twitter mr-3"></a>
                                 <a href="#" class="fa fa-facebook mr-3"></a>
                                 <a href="#" class="fa fa-github mr-3"></a>
-                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-linkedin" style="margin-right: 150px;"></a>
+                                <a class="tooltip-cl cv-download" data-tooltip="Download CV" href="#cv-url"><ion-icon name="download-outline" data-toggle="modal" data-target="#exampleModal"></ion-icon></a>
                           </div>
-                          <a class="tooltip-cl cv-download" data-tooltip="Download CV" href="#cv-url"><ion-icon name="download-outline"></ion-icon></a>
+                              
+                          <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">CV</h5>
+                                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="col-md text-center">
+                                    <i class="fa fa-file-o fa-3x rounded-circle mb-4" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="d-flex justify-content-center">This link contains my CV or Resume which is describes a lot about my Experience, Education, Interest and my Work Ethic</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-dark">Download</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                              
+                            </div>
+                          </div>
+
+                        </div>
                     </div>
+                    
                 </div>
               </div>
             </div>
@@ -505,8 +535,8 @@
                 <h3>Let's Talk</h3>
                 <ul class="contact pl-0 mt-5">
                   <li>Phone Number:08211-678-2890</li>
+                  <li>Whatsapp:08211-678-2890</li>
                   <li>Email:haryoharyo2@gmail.com</li>
-                  <li>Phone Number:08211-678-2890</li>
                   <li>Address:Jl.Mawaddah 4 Blok N2 No 5, Kelapa Dua, Tangerang</li>
                   <li>Province:Banten</li>
                   <a href="https://www.google.com/maps/place/Jl.+Mawaddah+IV,+Klp.+Dua,+Kec.+Klp.+Dua,+Tangerang,+Banten+15810/@-6.2333188,106.616867,17z/data=!4m8!1m2!2m1!1sMawaddah+4+blok+n2+no+5,+tangerang!3m4!1s0x2e69fc056a48d221:0x316a5257fbdb0241!8m2!3d-6.233324!4d106.6190556?hl=en" class="mfp-iframe popup-it"><h4 class="map-open"> Open Map </h4></a>
@@ -564,7 +594,7 @@
 
                     </form>
                   </div>
-
+                  
                   <a href="#" class="btn btn-dark">SEND MESSAGE</a>
 
                 </div>
@@ -585,7 +615,6 @@
       <script src="../JS/scripts.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>AOS.init();</script>
-      <script src="../JS/jquery.magnific-popup.min.js" type="text/javascript"></script>
       <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

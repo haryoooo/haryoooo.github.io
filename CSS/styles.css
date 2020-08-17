@@ -6,6 +6,10 @@
   margin: auto;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 h3 {
   font-family:'Lato', sans-serif;
   margin-top: 10px;
@@ -131,7 +135,7 @@ button:before{
 
 .site-footer a
 {
-  color:#acac;
+  color:#aaa;
 }
 
 .site-footer a:hover
@@ -221,13 +225,13 @@ button:before{
 {
   margin-right:15px;
   text-transform:uppercase;
-  color:#96a2b2;
+  color:#818a91;
   font-weight:700;
   font-size:13px
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  color:#aaa;
   font-size:16px;
   display:inline-block;
   line-height:44px;
@@ -242,7 +246,7 @@ button:before{
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
+  color:#aaa;
   background-color:#29aafe
 }
 .social-icons.size-sm a
@@ -444,7 +448,7 @@ text-align: center;
 }
 
 /* The Modal (background) */
-.modal {
+.Gallery .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -458,7 +462,7 @@ text-align: center;
 }
 
 /* Modal Content */
-.modal-content {
+.Gallery .modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -468,7 +472,7 @@ text-align: center;
 }
 
 /* The Close Button */
-.close {
+.Gallery .close {
   color: white;
   position: absolute;
   right: 25px;
@@ -476,8 +480,8 @@ text-align: center;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.Gallery .close:hover,
+.Gallery .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
@@ -672,6 +676,10 @@ section {
     background: url("../PIC/texture.png");
 }
 
+.modal-body {
+  font-family: Montserrat, sans-serif;
+}
+
 /* LINE ART */
 
 .line-art-top{
@@ -795,16 +803,12 @@ ion-icon {
     display: inline-block;
 }
 
-.socmed a {
-    margin-right: 5px;
+.socmed .fa {
+    margin-right: 10px;
     display: inline-block;
     text-decoration: none;
     font-weight: 400;
     color: #101010;
-}
-
-.socmed a:hover {
-    text-decoration: none
 }
 
 /* End of socmed */
@@ -1031,11 +1035,6 @@ textarea:focus
     position: relative;
   }
 
-  a:hover {
-    text-decoration: none;
-  }
-
-
 /* End of Input Contact */
 
 /* Footer Experience */
@@ -1053,7 +1052,6 @@ textarea:focus
     color: black;
     font-size: 18px;
     margin-top: 10px;
-    
 }
 
 /* End of footer Experience */
@@ -1073,11 +1071,8 @@ textarea:focus
       transform: none;
   }
 
-  section {
-    margin-bottom: 0;
 }
 
-}
 /* End Of Responsive */
 
 /* ======== End Of Resume Page ======== */

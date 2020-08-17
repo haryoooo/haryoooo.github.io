@@ -11,5 +11,6 @@ BUG :
 
 3. Resume 
 	- Image load efficency
-	- Responsive fill in Contacts
-	- API Twitter latest tweet
+	- Responsive fill in Contacts 
+	- API Twitter latest tweet (?)
+	- Maps Modal Content

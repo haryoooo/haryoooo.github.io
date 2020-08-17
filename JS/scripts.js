@@ -7,7 +7,7 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -68,8 +68,6 @@ function showSlides(n) {
 
 /* End Of Lightbox Gallery */
 
-
-
 /* Animation On Scroll */
 
 AOS.init({
@@ -81,11 +79,14 @@ AOS.init({
 /* End of Animation On Scroll */
 
 
+
 // Skill Slider 
 
 var slideIndex = 1;
 showDivs(slideIndex);
 
+
+// Next/previous controls
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
