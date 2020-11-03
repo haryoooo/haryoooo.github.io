@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="shotrcut icon" href="../PIC/favicon.ico" type="image/x-icon">
       <title>Mainpage</title>
       </head>
     <body class="bg-light">
@@ -26,7 +27,6 @@
           <a class="nav-item nav-link" href="../HTML/Biography.html">Biography</a>
           <a class="nav-item nav-link" href="../HTML/Resume.html">Resume</a>
           <a class="nav-item nav-link" href="../HTML/Resume.html#Portfolio">Portfolio</a>
-          <a class="nav-item nav-link" href="../HTML/Resume.html#Contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -36,7 +36,7 @@
     <section class="Mainpage">
       <div class="col-md-6">
         <h1>Welcome to my page</h1>
-        <p>This is a mainpage of <span style="font-weight: bold;">Haryo Novianto</span></p>
+        <p>This is a mainpage of <span>Haryo Novianto</span></p>
         <button data-hover="click me!"><div>Learn More</div></button>
       </div>
   </section>
@@ -55,20 +55,18 @@
           <div class="col-xs-6 col-md-3">
             <h6>Skills</h6>
             <ul class="footer-links">
-              <li><a href="#">Front-End Development</a></li>
-              <li><a href="#">Git Version Control</a></li>
-              <li><a href="#">Framework</a></li>
-              <li><a href="#">SQL Query</a></li>
+              <li><a href="#" data-content="Front-End Development">Front-End Development</a></li>
+              <li><a href="#" data-content="Git Version Control">Git Version Control</a></li>
+              <li><a href="#" data-content="SQL Query">SQL Query</a></li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
             <h6>Pages</h6>
             <ul class="footer-links">
-              <li><a href="../HTML/Biography.html">Biography</a></li>
-              <li><a href="../HTML/Resume.html">Resume</a></li>
-              <li><a href="../HTML/Resume.html#Portfolio">Portfolio</a></li>
-              <li><a href="../HTML/Resume.html#Contact">Contact</a></li>
+              <li><a href="../HTML/Biography.html" data-content="Biography">Biography</a></li>
+              <li><a href="../HTML/Resume.html" data-content="Resume">Resume</a></li>
+              <li><a href="../HTML/Resume.html#Portfolio" data-content="Portfolio">Portfolio</a></li>
             </ul>
           </div>
         </div>
@@ -78,8 +76,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-            <a href="#">Haryo Novianto</a>.
+            <p class="copyright-text">Copyright &copy; 
+              <script> 
+                  var CurrentYear = new Date().getFullYear()
+                  document.write(CurrentYear) 
+              </script> 
+              All Rights Reserved by 
+            <span>Haryo Novianto</span>.
             </p>
           </div>
 

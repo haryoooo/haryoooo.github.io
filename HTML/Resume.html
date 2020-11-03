@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="shotrcut icon" href="../PIC/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Resume</title>
@@ -32,7 +33,6 @@
           <a class="nav-item nav-link" href="../HTML/Biography.html">Biography</a>
           <a class="nav-item nav-link" href="../HTML/Resume.html">Resume</a>
           <a class="nav-item nav-link" href="../HTML/Resume.html#Portfolio">Portfolio</a>
-          <a class="nav-item nav-link" href="../HTML/Resume.html#Contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -57,22 +57,35 @@
     <div class="container">
         <div class="row">
           <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">About</h1><!-- /. large title -->
-            <div class="about col-lg-8 mb-5">
+            <div class="about col-lg-8 mb-3">
               <div class="holder">
                 <div class="container">
                   
-                <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
-                <div class="header"></div>
-                <h4>About Me</h4>
-                <p>
-                    A guy who never tired of learning something new!
-                </p>
+                <i class="fa i-list fa-pencil-square-o fa-3x" aria-hidden="true"></i>
+                <h3>About</h3>
                 
+                <div class="row">
+                  <div class="col-md-8">
+                  <h4>Motto</h4>
+                  <p>
+                      Never tired of learning something new!
+                  </p>
+                </div>
+              </div>
+                
+              <div class="row">
+                <div class="col-md-8">
                 <h4> Hobbies </h4>
                 <p> Gaming | Skateboarding | Web Development</p>
-              
-                <h4> Latest Tweet </h4>
-                <p>This is my latest tweet</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8">
+                <h4> Personal Info </h4>
+                <p> Hard Worker | Deep Learner | Well-Organized</p>
+                </div>
+              </div>
                 
                 </div>
               </div>
@@ -110,18 +123,39 @@
               </div>
               <!-- /.right line -->
                     <img src="../PIC/haryo2.jpg"  width="90%" class="rounded-circle hover-shadow">
-                        <div class="header"></div>
                           <div class="introduce">
                                 <h6>Name: Haryo Novianto</h6>
                                 <h6>Age: 24 Years Old</h6>
                                 <h6>Nationality: Indonesian</h6>
-                          </div>
+                                <h6>Address:Jl.Mawaddah 4 Blok N2 No 5, Kelapa Dua, Tangerang</h6>
+                                <a href="#"><h6 data-toggle="modal" data-target="#modalRegular">Open Map</h6></a>
+               
+                                  <!--Modal: Name-->
+                                  <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                  
+                                      <!--Content-->
+                                      <div class="modal-content">
+                                  
+                                        <!--Body-->
+                                        <div class="modal-body mb-0 p-0">
+                                  
+                                          <!--Google map-->
+                                          <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
+                                            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20mawaddah%20IV%20+(My%20Business%20Name)&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"frameborder="0" style="border:0" allowfullscreen></iframe>
+                                          </div>
+                                  
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
 
                           <div class="socmed">
                                 <a href="#" class="fa fa-twitter mr-3"></a>
                                 <a href="#" class="fa fa-facebook mr-3"></a>
                                 <a href="#" class="fa fa-github mr-3"></a>
-                                <a href="#" class="fa fa-linkedin" style="margin-right: 150px;"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
                                 <a class="tooltip-cl cv-download" data-tooltip="Download CV" href="#cv-url"><ion-icon name="download-outline" data-toggle="modal" data-target="#exampleModal"></ion-icon></a>
                           </div>
                               
@@ -137,13 +171,13 @@
                                   </div>
                                   <div class="modal-body">
                                     <div class="col-md text-center">
-                                    <i class="fa fa-file-o fa-3x rounded-circle mb-4" aria-hidden="true"></i>
+                                    <i class="fa i-list fa-file-o fa-3x rounded-circle mb-4" aria-hidden="true"></i>
                                     </div>
                                     <p class="d-flex justify-content-center">This link contains my CV or Resume which is describes a lot about my Experience, Education, Interest and my Work Ethic</p>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-dark">Download</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                    <a href="../PIC/CV.pdf" download><button type="button" class="btn btn-dark">Download</button></a>
                                   </div>
                                 </div>
                               </div>
@@ -199,15 +233,15 @@
             </div>
             <!-- /.right line -->
               <div class="container">
-              <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
-              <div class="header"></div>
+              <i class="fa i-list fa-star-o fa-3x" aria-hidden="true"></i>
+              
               <h3>Skills</h3>
               <div class="skill-holder">
                 <div class="mySlides">
                 <h6 style="text-align: right;">Hard Skills</h6>
                 <div class="text-bar">
-                <span class="Left">75%</span>
-                <span class="Right">CSS</span>
+                  <span class="Left">75%</span>
+                  <span class="Right">CSS</span>
                 </div>
                 <div class="progress justify-content-end" style="height: 3px;">
                 <div class="progress-bar bg-dark" role="progressbar" style="max-width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
@@ -321,10 +355,10 @@
               </div>
 
             
-          <div class="col-lg-8">
+          <div class="col-lg-8 ">
             <div class="holder">
-              <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
-              <div class="header"></div>
+              <i class="fa i-list fa-lightbulb-o fa-3x" aria-hidden="true"></i>
+              
               <h3>Education</h3>
 
               <div class="time-item">
@@ -358,11 +392,11 @@
             <div class="container">
             <div class="row">
               <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">Experience</h1><!-- /. large title -->
-              <div class="col-sm-12 mt-4">
+              <div class="col-sm-12">
                 
                 <div class="holder">
-                  <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
-                  <div class="header"></div>
+                  <i class="fa i-list fa-file-text-o fa-3x" aria-hidden="true"></i>
+                  
                   <h3>Work Experience</h3>
                   <div class="time-item">
                   
@@ -444,41 +478,40 @@
           </div>
           <!-- /.right line -->
             <div class="holder texture">
-              <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
-              <div class="header"></div>
+              <i class="fa i-list fa-file-code-o fa-3x" aria-hidden="true"></i>
+              
             <h3>Portfolio</h3>
 
-
-        <div class="container">
-          <div class="row mb-5 mr-1 ml-3">
+            <div class="container">
+            <div class="row mb-5 mr-1 ml-3">
             <div class="col-md mt-3">
               <div class="card" style="width: 18rem;">
-                <img src="../PIC/web code.jpg" class="card-img-top" alt="...">
+                <img src="../PIC/calculator.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Responsive Web</h5>
-                  <p class="card-text">My First project introducing into front end environment</p>
-                  <a href="#" class="btn btn-dark">Go to project</a>
+                  <h5 class="card-title">Calculator</h5>
+                  <p class="card-text">Simple Project that created by me focusing at JavaScript DOM and CSS Animation</p>
+                  <a href="#" class="btn btn-dark">Go To Project</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md mt-3">
-              <div class="card" style="width: 18rem;">
-                <img src="../PIC/data.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Data Warehouse</h5>
-                  <p class="card-text">Project that collab & integrated with company internal website</p>
-                  <a href="#" class="btn btn-dark">Coming Soon</a>
+                <div class="col-md mt-3 justify-content-center">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../PIC/web code.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Responsive Web</h5>
+                      <p class="card-text">This project is about build a web that contains front end tools in the process</p>
+                      <a href="../HTML/Mainpage.html" class="btn btn-dark">Go To Project</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
               <div class="col-md mt-3">
                 <div class="card" style="width: 18rem;">
                   <img src="../PIC/whack.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Whack-A-Boom!</h5>
-                    <p class="card-text">Simple game will be created by me with JavaScript</p>
+                    <p class="card-text">Simple game will be created by me with advanced CSS Animation and Javascript skill</p>
                     <a href="#" class="btn btn-dark">Coming Soon</a>
                   </div>
                 </div>
@@ -492,118 +525,6 @@
       </div>
     </section>
     <!-- END OF PORTFOLIO  -->
-
-
-    <!-- CONTACT -->
-      <section id="Contact">
-          <div class="container">
-            <div class="row">
-              <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">Contact</h1><!-- /. large title -->
-              <div class="col-lg-4 mb-5">
-                <div class="holder texture">
-                  <!-- draw line art -->
-                  <div class="line-art-top">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <!-- /.top line -->
-                  <div class="line-art-bottom">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <!-- /.bottom line -->
-                  <div class="line-art-left">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <!-- /.left line -->
-                  <div class="line-art-right">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <!-- /.right line -->
-                  <i class="fa fa-commenting-o fa-3x" aria-hidden="true"></i>
-                  <div class="header"></div>
-                <h3>Let's Talk</h3>
-                <ul class="contact pl-0 mt-5">
-                  <li>Phone Number:08211-678-2890</li>
-                  <li>Whatsapp:08211-678-2890</li>
-                  <li>Email:haryoharyo2@gmail.com</li>
-                  <li>Address:Jl.Mawaddah 4 Blok N2 No 5, Kelapa Dua, Tangerang</li>
-                  <li>Province:Banten</li>
-                  <a href="https://www.google.com/maps/place/Jl.+Mawaddah+IV,+Klp.+Dua,+Kec.+Klp.+Dua,+Tangerang,+Banten+15810/@-6.2333188,106.616867,17z/data=!4m8!1m2!2m1!1sMawaddah+4+blok+n2+no+5,+tangerang!3m4!1s0x2e69fc056a48d221:0x316a5257fbdb0241!8m2!3d-6.233324!4d106.6190556?hl=en" class="mfp-iframe popup-it"><h4 class="map-open"> Open Map </h4></a>
-                  <div class="header"></div>
-                </ul>
-                <div class="socmed">
-                  <a href="#" class="fa fa-twitter mr-3"></a>
-                  <a href="#" class="fa fa-facebook mr-3"></a>
-                  <a href="#" class="fa fa-github mr-3"></a>
-                  <a href="#" class="fa fa-linkedin"></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div class="holder">
-                <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
-                  <div class="header"></div>
-                <h3>Reach Me</h3>
-
-                  <div class="wrapper">
-                    <form>
-                      <div class="row">
-                        <div class="col-md-5">
-                          <div class="group">
-                            <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-                            <label>Name</label>
-                          </div>
-                          <div class="group">
-                            <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-                            <label>Email</label>
-                          </div>
-                        </div>
-
-                      <div class="col-md-5">
-                      <div class="group">
-                        <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-                        <label>Phone</label>
-                      </div>
-                      <div class="group">
-                        <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
-                        <label>Subject</label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-5">
-                        <div class="group">
-                        <textarea type="textarea" rows="4" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
-                        <label>Message</label>
-                      </div>
-                    </div>
-                  </div>
-
-                    </form>
-                  </div>
-                  
-                  <a href="#" class="btn btn-dark">SEND MESSAGE</a>
-
-                </div>
-              </div>
-
-            </div>
-         </div>
-      </section>
-      <!-- END OF CONTACT -->
 
     
       <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">

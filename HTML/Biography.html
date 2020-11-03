@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="shotrcut icon" href="../PIC/favicon.ico" type="image/x-icon">
     <title>Biography</title>
     </head>
     <body>
@@ -26,27 +27,27 @@
           <a class="nav-item nav-link" href="../HTML/Biography.html">Biography</a>
           <a class="nav-item nav-link" href="../HTML/Resume.html">Resume</a>
           <a class="nav-item nav-link" href="../HTML/Resume.html#Portfolio">Portfolio</a>
-          <a class="nav-item nav-link" href="../HTML/Resume.html#Contact">Contact</a>
         </div>
       </div>
     </nav>  
     <!-- End of Navbar -->
 
     <!-- Content -->
-    <div class="Biography">
+    <div class="bio">
+    <section class="Biography">
       <div class="container">
         <div class="holder-bio bg-light">
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-         <div class="row content justify-content-around align-items-top mt-5">
+         <div class="row content justify-content-around align-items-top">
             <div class="col-md-5">
               <img src="../PIC/bdg pic2.jpeg" width="600px" class="rounded img-fluid mb-4" alt="">
               </div>
                 <div class="col-md-5">
                   <h3>Bandung</h3>
                   <p>
-                    Talk about my Education, I was graduated from Telkom University Bandung at November 2017 after 3 years at college. 
-                    I always had a great moments traveling around Bandung city, Bandung is my favorite City!</p>
+                    I choose to take a diploma degree in Telkom Bandung, and then i was graduated from Telkom University Bandung at November 2017 after 3 years at one of favorite bandung college. 
+                    I Love Bandung! because i always had a great moments traveling around Bandung city especially Riau, Dago and Setiabudi</p>
                   </div>
                 </div>  
 
@@ -55,34 +56,38 @@
                 <img src="../PIC/jkt pic.jpeg" width="600px" class="rounded img-fluid" alt="">
               </div>
 
-            <div class="col-md-5">
+            <div class="col-md-5 jkt">
                 <h3>Jakarta</h3>
                 <p>
                   After graduate from telkom, i was continuing my study at Jakarta while i work in there.
                   Despite the traffic, Jakarta is fun city to travel. There's so many culinary and shopping place in there!</p>
             </div>
           </div>
-        <hr>
+
+          </div>
+        </section>
      <!--End of Content -->
 
      <!-- Hobby -->
-     <div class="container">
-      <div class="hobby">
-        <h2>Interest</h2>
-        <div class="row">  
-        <div class="col-lg-12">
+     <section class="Interest">
+      <div class="container">
+        <div class="holder-bio bg-light">
+          <h2>Interest</h2>
+          <div class="row">  
+          <div class="col-lg-12">
 
         <!-- Hobby row 1 -->
-        <div class="row pt-5">
-          <div class="col-md">
-          <div class="flip">
-            <div class="front" style="background-image: url(../PIC/game.jpeg)">
-               <h3 class="text-shadow">GAMING</hi>
+        <div class="hobby">
+        <div class="row">
+            <div class="col-md">
+            <div class="flip">
+              <div class="front" style="background-image: url(../PIC/game.jpeg)">
+                <h3 class="text-shadow">GAMING</hi>
             </div>
-            <div class="back">
-               <h3>Gaming</h3>
-               <p>Gaming is like something i always do to refresh my mind, and Open World is my favorite type of game</p>
-            </div>
+              <div class="back">
+                <h3>Gaming</h3>
+                <p>Gaming is like something i always do to refresh my mind, and Open World is my favorite type of game</p>
+              </div>
           </div>
           </div>
         
@@ -104,15 +109,15 @@
                 <h3 class="text-shadow">DEVELOPMENT</hi>
               </div>
               <div class="back">
-                <h3>Web Development</h3>
-                <p>Web Developing is kinda fun especially when you love to learn</p>
+                <h3>Development</h3>
+                <p>Self Developing is kinda fun especially when you love to learn something new!</p>
               </div>
+            </div>
           </div>
-          </div>
-          <!-- End of hobby row 1 -->
+        <!-- End of hobby row 1 -->
 
         <!-- Hobby Row 2 -->
-        <div class="col-md pt-5">
+        <div class="col-md">
         <div class="flip">
             <div class="front" style="background-image:url(../PIC/movie.jpg) ">
                <h3 class="text-shadow">MOVIES</hi>
@@ -124,7 +129,7 @@
         </div>
         </div>
 
-        <div class="col-md pt-5">
+        <div class="col-md">
           <div class="flip">
             <div class="front" style="background-image: url(../PIC/learn.jpg)">
                <h3 class="text-shadow">LEARNING</hi>
@@ -136,7 +141,7 @@
         </div>
         </div>
 
-        <div class="col-md pt-5">
+        <div class="col-md">
         <div class="flip">
             <div class="front" style="background-image: url(../PIC/travel.jpg)">
                <h3 class="text-shadow">TRAVELING</hi>
@@ -147,134 +152,140 @@
             </div>
             </div>
           </div>
-            <!-- End of Hobby row 2 -->
+          <!-- End of Hobby row 2 -->
 
+              </div>
+            </div>
           </div>
-        </div>
+        </div> 
       </div>
-    </div> 
-  </div>
-  <hr>
+    </div>
+    </section>
   <!-- End Hobby -->  
     
-    
-    <!-- Gallery -->
-  <div class="container">
-    <div class="Gallery">
-      <h2>Image Gallery</h2>
-          <div class="row">
-            <div class="col">
-              <img src="../PIC/bdg.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor rounded">
+  <!-- Gallery -->
+  <section class="Gallery">
+    <div class="container">
+      <div class="holder-bio bg-light">
+        <h2>Image Gallery</h2>
+          <div class="grid-container">
+              <div class="grid-item">
+                <img src="../PIC/bdg.JPG"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor rounded">
+              </div>
+              
+              <div class="grid-item">
+                <img src="../PIC/bdg 2018.JPG"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor rounded">
+              </div>
+              
+              <div class="grid-item">
+                <img src="../PIC/haryo sk8.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow cursor rounded">
+              </div>
+              
+              <div class="grid-item">
+                <img src="../PIC/binus.JPG"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor rounded">
+              </div>
+
+              <div class="grid-item">
+                <img src="../PIC/adit's.JPG" onclick="openModal();currentSlide(5)" class="hover-shadow cursor rounded">
+              </div>
+            
+              <div class="grid-item">
+                <img src="../PIC/jaksel.jpg"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor rounded">
+              </div>
+            
+              <div class="grid-item">
+                <img src="../PIC/46.JPG"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor rounded">
+              </div>
+            
+              <div class="grid-item">
+                <img src="../PIC/Puncak.JPG" onclick="openModal();currentSlide(8)" class="hover-shadow cursor rounded">
+              </div>
+      
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+            <div class="mySlides">
+                  <div class="numbertext">1 / 8</div>
+                  <img src="../PIC/bdg.JPG" style="width:100%">
+              <div class="caption-container">
+                    <p id="caption">Bandung, 2018</p>
+              </div>
             </div>
-            <div class="col">
-              <img src="../PIC/bdg 2018.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor rounded">
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="../PIC/bdg 2018.JPG" style="width:100%">
+              <div class="caption-container">
+                <p id="caption">Bandung, 2018</p>
+              </div>
             </div>
-            <div class="col">
-              <img src="../PIC/haryo sk8.JPG" style="width:100%; height: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor rounded">
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="../PIC/haryo sk8.JPG" style="width:100%">
+              <div class="caption-container">
+                <p id="caption">Bandung, 2017</p>
+              </div>
             </div>
-            <div class="col">
-              <img src="../PIC/binus.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor rounded">
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="../PIC/binus.JPG" style="width:100%">
+              <div class="caption-container">
+                <p id="caption">Jakarta, 2018</p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="../PIC/adit's.JPG" style="width:100%">
+              <div class="caption-container">
+                <p id="caption">Tangerang, 2018</p>
+              </div>
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="../PIC/jaksel.jpg" style="width:100%">
+              <div class="caption-container">
+                <p id="caption">Jakarta, 2019</p>
+              </div>
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="../PIC/46.JPG" style="width:100%">
+              <div class="caption-container">
+                <p id="caption">Jakarta, 2019</p>
+              </div>
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="../PIC/Puncak.JPG" style="width:100%">
+              <div class="caption-container">
+                <p id="caption">Puncak, 2019</p>
+              </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            </div>
+          </div>
         </div>
       </div>
-          
-        <div class="row">
-            <div class="col">
-              <img src="../PIC/adit's.JPG" style="width:100%; height: 100%;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor rounded">
-            </div>
-            <div class="col">
-              <img src="../PIC/jaksel.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor rounded">
-            </div>
-            <div class="col">
-              <img src="../PIC/46.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor rounded">
-            </div>
-            <div class="col">
-              <img src="../PIC/Puncak.JPG" style="width:100%; height: 100%;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor rounded">
-        </div>
-      </div>
     </div>
-
-      
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-      
-          <div class="mySlides">
-            <div class="numbertext">1 / 8</div>
-            <img src="../PIC/bdg.JPG" style="width:100%">
-            <div class="caption-container">
-                  <p id="caption">Bandung, 2018</p>
-            </div>
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">2 / 8</div>
-            <img src="../PIC/bdg 2018.JPG" style="width:100%">
-            <div class="caption-container">
-              <p id="caption">Bandung, 2018</p>
-            </div>
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">3 / 8</div>
-            <img src="../PIC/haryo sk8.JPG" style="width:100%">
-            <div class="caption-container">
-              <p id="caption">Bandung, 2017</p>
-            </div>
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">4 / 8</div>
-            <img src="../PIC/binus.JPG" style="width:100%">
-            <div class="caption-container">
-              <p id="caption">Jakarta, 2018</p>
-            </div>
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">5 / 8</div>
-            <img src="../PIC/adit's.JPG" style="width:100%">
-            <div class="caption-container">
-              <p id="caption">Tangerang, 2018</p>
-            </div>
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">6 / 8</div>
-            <img src="../PIC/jaksel.jpg" style="width:100%">
-            <div class="caption-container">
-              <p id="caption">Jakarta, 2019</p>
-            </div>
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">7 / 8</div>
-            <img src="../PIC/46.JPG" style="width:100%">
-            <div class="caption-container">
-              <p id="caption">Jakarta, 2019</p>
-            </div>
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="../PIC/Puncak.JPG" style="width:100%">
-            <div class="caption-container">
-              <p id="caption">Puncak, 2019</p>
-            </div>
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-      </div>
-    </div>
-    </div>
-    <hr>
-    <!--Gallery-->
+  </section>
+  <!--Gallery-->
     
     <!-- Quotes -->
+    <section class="Quote">
       <div class="container">
+        <div class="holder-bio bg-light">
           <div class="row justify-content-center Quotes">
-              <div class="col-md-6">
+              <div class="col-md-7">
                   <h5>"Success is not defined by how many times you failed but by how many times you learned your own failure"</h5>
               </div>
             </div>
@@ -284,12 +295,11 @@
                     <figure class="figure">
                     <img src="../PIC/haryo2.JPG" class="rounded-circle hover-shadow cursor" alt="">
                     <figcaption class="figure-caption text-center">
-                    <h5>Haryo Novianto</h5>
+                    <h4>Haryo Novianto</h4>
                     <span>Digital Product Development</span>
 
 
-              <div class="row">
-                <div class="col socmed">
+                    <div class="socmed">
                           <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                           <a href="https://twitter.com/home" class="fa fa-twitter"></a>
                           <a href="https://github.com/" class="fa fa-github"></a>
@@ -301,10 +311,12 @@
               </figure>
             </div>
           </div>
-        </section>
+        </div>
       </div>
+    </section>
     </div>
     <!-- End Quotes -->
+    
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
