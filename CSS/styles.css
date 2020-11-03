@@ -73,7 +73,6 @@ button {
   background: transparent; outline: none;
   position: relative;
   border: 2px solid #fff;
-  margin-left: 100px;
   padding: 15px 50px;
   overflow: hidden;
 }
@@ -387,7 +386,7 @@ transform: scaleX(-1);
   display: inline-block;
   margin-right: 2px;
   margin-bottom: 1em;
-  width: 200px;
+  width: 280px;
 }
 .flip > .front, .flip > .back {
   display: block;
@@ -396,19 +395,19 @@ transform: scaleX(-1);
   width: inherit;
   background-size: cover !important;
   background-position: center !important;
-  height: 250px;
+  height: 200px;
   padding: 1em 2em;
   background: #313131;
   border-radius: 10px;
 }
 .flip > .front p, .flip > .back p {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   
-  line-height: 160%;
+  line-height: 100%;
   color: #aaa;
 }
 .text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1 rem 1rem rgba(0, 0, 0, 0.04);
 }
 
 /* End of Hobby */
@@ -841,7 +840,6 @@ ion-icon {
 /* Card */
 
 .card-text {
-    text-align: justify;
     font-family: Montserrat, sans-serif;
 }
 
@@ -1087,6 +1085,9 @@ position:absolute;
   }
 
   /* Mainpage */
+  .Mainpage .Resume {
+    margin-bottom: 0;
+  }
 
   .Mainpage h1{
     font-size: 1.5em; 
