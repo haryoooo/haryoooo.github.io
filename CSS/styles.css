@@ -1064,8 +1064,8 @@ position:absolute;
 
 /* Responsive */
 
-@media (max-width: 991px) {
-  
+@media (max-width:767px) {
+
   h1 {
     font-size: 28px;
   }
@@ -1216,8 +1216,6 @@ position:absolute;
     width: 250px;
     }
   }
-
-@media (max-width:767px) {
 
   .site-footer
   {
