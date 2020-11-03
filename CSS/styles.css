@@ -1086,13 +1086,6 @@ position:absolute;
     font-size: 18px;
   }
 
-  .nav-link:hover::after{
-    content: '';
-    display: block;
-    width: 0;
-    margin: auto;
-  }
-
   /* Mainpage */
 
   .Mainpage h1{
