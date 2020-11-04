@@ -46,6 +46,7 @@ section {
   background: no-repeat;
   background-size: cover;
   background-image: url(../PIC/frontpage3.jpg);
+  margin-bottom: 0;
 }
 
 .Mainpage a:hover {
@@ -1067,6 +1068,10 @@ position:absolute;
 .navbar{
   margin:0;
   }
+
+.Mainpage .Resume {
+    margin: 0;
+  }
 }
 
 
@@ -1096,7 +1101,7 @@ position:absolute;
   /* Mainpage */
   
   .Mainpage .Resume {
-    margin: 0 auto;
+    margin: 0;
   }
 
   .Mainpage h1{
