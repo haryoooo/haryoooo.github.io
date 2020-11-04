@@ -745,7 +745,7 @@ section {
 
 ion-icon {
     font-size: 21px;
-    position: relative;
+    position: absolute;
 }
 
 .cv-download {
@@ -1064,15 +1064,11 @@ position:absolute;
 @media (max-width:480px) {
 
 /* Mainpage */
-.navbar{
-  margin:0;
-  }
 
-.Mainpage .Resume {
+.Mainpage, .jumbotron {
     margin: 0;
   }
 }
-
 
 
 @media (max-width:767px) {
@@ -1198,13 +1194,6 @@ position:absolute;
     font-weight: 300;
     color: #fff;
   }
-
-  .cv-download {
-    text-align: right;
-    margin-left: 15em;
-    margin-top: 5px;
-    color: #101010;
-}
 
   textarea {
     background: none;
