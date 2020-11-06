@@ -33,10 +33,10 @@ h4, h6 {
   font-weight: bold;
 }
 
-/* 
+
 section {
   margin: 20px auto;
-} */
+}
 
 
 /* ======== Mainpage ========  */
@@ -745,7 +745,7 @@ section {
 
 ion-icon {
     font-size: 21px;
-    position: absolute;
+    position: relative;
 }
 
 .cv-download {
@@ -1065,7 +1065,7 @@ position:absolute;
 
 /* Mainpage */
 
-.Mainpage, .jumbotron {
+.Mainpage .Resume {
     margin: 0;
   }
 }
@@ -1194,6 +1194,13 @@ position:absolute;
     font-weight: 300;
     color: #fff;
   }
+
+  .cv-download {
+    text-align: right;
+    margin-left: 15em;
+    margin-top: 5px;
+    color: #101010;
+}
 
   textarea {
     background: none;
