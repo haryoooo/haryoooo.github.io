@@ -23,6 +23,17 @@ function topFunction() {
 /* End of Scroll Top */
 
 
+// Navbar Function
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px"
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0"
+}
+
+
 /* Lightbox Gallery */
 
 // Open the Modal
@@ -77,7 +88,6 @@ AOS.init({
 });
 
 /* End of Animation On Scroll */
-
 
 
 // Skill Slider 

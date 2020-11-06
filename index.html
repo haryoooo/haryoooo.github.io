@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../Pages/CSS/styles.css">
     <link rel="shotrcut icon" href="../Pages/PIC/favicon.ico" type="image/x-icon">
       <title>Mainpage</title>
       </head>
@@ -16,20 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
     
     <!-- Navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a href="../index.html"><img src="../PIC/letter-h.png" width="40" height="40" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="../Pages/index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="../Pages/HTML/Biography.html">Biography</a>
-          <a class="nav-item nav-link" href="../Pages/HTML/Resume.html">Resume</a>
-          <a class="nav-item nav-link" href="../Pages/HTML/Resume.html#Portfolio">Portfolio</a>
-        </div>
-      </div>
-    </nav> -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../Pages/index.html">Mainpage</a>
+      <a href="../Pages/HTML/Biography.html">Biography</a>
+      <a href="../Pages/HTML/Resume.html">Resume</a>
+      <a href="../Pages/HTML/Resume.html#Portfolio">Portfolio</a>
+    </div>
+
+    <div class="burgerbar" onclick="openNav()">&#9776;</div>
+
     <!-- End of Navbar -->
         
     <!-- Cover -->
@@ -100,9 +96,7 @@
       </div>
     </footer>
     <!-- End Footer -->
-          <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-          <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+          <script src="../Pages/JS/scripts.js"></script>
     <!------ Include the above in your HEAD tag ---------->
           <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Optional JavaScript -->
