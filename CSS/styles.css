@@ -13,10 +13,6 @@
   margin: 30px 30px;
 }
 
-.burgerbar:hover {
-  color: #818181;
-}
-
 .sidenav {
   height: 100%;
   position: fixed;
@@ -95,7 +91,7 @@ section {
 
 .Mainpage h1{
   font-size: 2em; 
-  padding-top: 150px; 
+  padding-top: 200px; 
   margin-left: 150px; 
   text-transform: uppercase;
 }
@@ -1108,6 +1104,9 @@ position:absolute;
 .Mainpage .Resume {
     margin: 0;
   }
+
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 
