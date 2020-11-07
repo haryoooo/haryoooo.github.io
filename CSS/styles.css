@@ -77,7 +77,7 @@ section {
 
 /* ======== Mainpage ========  */
 .Mainpage {
-  height: 700px;
+  height: 650px;
   color: white;
   background: no-repeat;
   background-size: cover;
@@ -781,7 +781,7 @@ section {
 
 ion-icon {
     font-size: 21px;
-    position: relative;
+    position: absolute;
 }
 
 .cv-download {
