@@ -3,7 +3,7 @@
 #mySidenav .icon {
   z-index: 1;
   font-size: 30px;
-  color: black;
+  color: gray;
   display: block;
   position: fixed;
   margin: 30px 30px;
@@ -20,7 +20,7 @@
   position: fixed;
   z-index: 2;
   opacity: 0.9;
-  background-color: gray;
+  background-color:black;
   margin: 100px 30px;
   border-radius: 12px;
   overflow: hidden;
