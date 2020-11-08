@@ -26,11 +26,16 @@ function topFunction() {
 // Navbar Function
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px"
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0"
+  let sideNav = document.querySelector(".sidenav")
+
+  if (sideNav.style.display === "block") {
+    sideNav.style.display = "none"
+  }
+
+  else {
+    sideNav.style.display = "block"
+  }
 }
 
 

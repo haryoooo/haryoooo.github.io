@@ -1,36 +1,38 @@
-/* .nav-link:hover::after{
-  content: '';
-  display: block;
-  border-bottom: 2px solid #aaa;
-  width: 50%;
-  margin: auto;
-} */
+/* NAVBAR */
 
-.burgerbar {
-  position: fixed;
-  font-size: 30px;
-  cursor: pointer;
-  margin: 30px 30px;
+#mySidenav .icon {
   z-index: 1;
+  font-size: 30px;
+  color: black;
+  display: block;
+  position: fixed;
+  margin: 30px 30px;
+}
+
+#mySidenav .icon:hover {
+  color: gray;
 }
 
 .sidenav {
-  height: 100%;
+  display: none;
+  height: 50%;
+  width: 200px;
   position: fixed;
   z-index: 2;
-  top: 0;
-  left: 0;
+  opacity: 0.9;
   background-color: #111;
+  margin: 100px 30px;
+  border-radius: 12px;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: gray;
   display: block;
   transition: 0.3s;
 }
@@ -39,13 +41,7 @@
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+/* END OF NAVBAR */
 
 a:hover {
   text-decoration: none;
@@ -70,19 +66,15 @@ h4, h6 {
   font-weight: bold;
 }
 
-section {
-  margin: 20px auto;
-}
-
 
 /* ======== Mainpage ========  */
 .Mainpage {
-  height: 650px;
+  height: 700px;
   color: white;
   background: no-repeat;
   background-size: cover;
   background-image: url(../PIC/frontpage3.jpg);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .Mainpage a:hover {
@@ -280,7 +272,7 @@ section {
   transition:all .2s linear
 }
 
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+.social-icons a:focus,.social-icons a:hover
 {
   color:#aaa;
   background-color:#29aafe
@@ -323,6 +315,7 @@ section {
   text-align: center;
   font-weight: 400;
 }
+
 
 /* Scroll Top */ 
 
@@ -380,9 +373,6 @@ transform: scaleX(-1);
   padding-top: 50px;
 }
 
-.flip {
-  position: relative;
-}
 .flip > .front, .flip > .back {
   display: block;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -421,7 +411,7 @@ transform: scaleX(-1);
 .flip {
   position: relative;
   display: inline-block;
-  margin-right: 2px;
+  margin: 20px auto;
   margin-bottom: 1em;
   width: 280px;
 }
@@ -1096,19 +1086,6 @@ position:absolute;
 /* End of footer Experience */
 
 /* Responsive */
-
-@media (max-width:480px) {
-
-/* Mainpage */
-
-.Mainpage .Resume {
-    margin: 0;
-  }
-
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 
 @media (max-width:767px) {
 
