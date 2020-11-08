@@ -1087,6 +1087,14 @@ position:absolute;
 
 /* Responsive */
 
+@media (max-width:480px) {
+
+  .Mainpage, .Resume {
+    margin: 0;
+  }
+
+}
+
 @media (max-width:767px) {
 
   h1 {
