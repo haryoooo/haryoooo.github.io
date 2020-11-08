@@ -10,7 +10,7 @@
 }
 
 #mySidenav .icon:hover {
-  color: gray;
+  color: #26272b;
 }
 
 .sidenav {
@@ -20,10 +20,10 @@
   position: fixed;
   z-index: 2;
   opacity: 0.9;
-  background-color: #111;
+  background-color: gray;
   margin: 100px 30px;
   border-radius: 12px;
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s;
   padding-top: 30px;
 }
