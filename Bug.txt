@@ -5,8 +5,7 @@ BUG :
 	- Image load efficiency
 	- Toggle Navigation for Guide button
 	- Margin for smartphone
-	- Navigation height extending while scrolling
-	- ico not show
+	- Navigation height extending while scrolling on Iphone X
 
 2. Biography 
 	- Code efficiency
