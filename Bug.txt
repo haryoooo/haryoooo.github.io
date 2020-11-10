@@ -4,6 +4,9 @@ BUG :
 	- Zoom Out
 	- Image load efficiency
 	- Toggle Navigation for Guide button
+	- Margin for smartphone
+	- Navigation height extending while scrolling
+	- ico not show
 
 2. Biography 
 	- Code efficiency
