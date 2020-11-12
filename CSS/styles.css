@@ -789,6 +789,7 @@ ion-icon {
 }
 
 .tooltip-cl:hover:after {
+    font-family: Montserrat, sans-serif;
     background: #101010;
     bottom: 35px;
     color: #fff;

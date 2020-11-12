@@ -1,3 +1,18 @@
+// Navbar Function
+
+function openNav() {
+
+  let sideNav = document.querySelector(".sidenav")
+
+  if (sideNav.style.display === "block") {
+    sideNav.style.display = "none"
+  }
+
+  else {
+    sideNav.style.display = "block"
+  }
+}
+
 /* Scroll Top */
 
 //Get the button
@@ -24,23 +39,17 @@ function topFunction() {
 
 /* End of Scroll Top */
 
+// Image Gallery
 
-// Navbar Function
-
-function openNav() {
-
-  let sideNav = document.querySelector(".sidenav")
-
-  if (sideNav.style.display === "block") {
-    sideNav.style.display = "none"
-  }
-
-  else {
-    sideNav.style.display = "block"
-  }
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
 }
 
-// Image Gallery
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
 
 var slideIndex = 1;
 showSlides(slideIndex);
