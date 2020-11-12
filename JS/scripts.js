@@ -4,7 +4,9 @@
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 1500px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()}
+window.onscroll = function() {
+  scrollFunction()
+}
 
 function scrollFunction() {
   if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
@@ -38,18 +40,7 @@ function openNav() {
   }
 }
 
-
-/* Lightbox Gallery */
-
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+// Image Gallery
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -82,7 +73,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-/* End Of Lightbox Gallery */
+/* End Of Image Gallery */
 
 /* Animation On Scroll */
 

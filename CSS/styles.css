@@ -772,11 +772,11 @@ section {
 }
 
 /* Icon and Tooltip */
-
+/* 
 ion-icon {
     font-size: 21px;
     position: absolute;
-}
+} */
 
 .cv-download {
     float: right;
@@ -1122,13 +1122,6 @@ position:absolute;
     font-weight: 300;
     color: #fff;
   }
-
-  .cv-download {
-    text-align: right;
-    margin-left: 15em;
-    margin-top: 5px;
-    color: #101010;
-}
 
   textarea {
     background: none;

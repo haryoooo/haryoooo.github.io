@@ -5,12 +5,15 @@ BUG :
 	- Image load efficiency
 	- Toggle Navigation for Guide button
 	- Margin for smartphone
-	- Navigation height extending while scrolling on Iphone X
+	- Navigation height extending while scrolling on Iphone X UP series
 
 2. Biography 
 	- Code efficiency
 	- Image load efficiency
+	- Small Thumbnail Image Gallery on Responsive Design
 
 3. Resume 
 	- Image load efficency
 	- API Connection from front-end to Back-end
+	- Margin Between row 1 for column 1 and 2
+	- How to manage projects folder on portfolio Pages
