@@ -1017,7 +1017,7 @@ position:absolute;
   }
 
   h5 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   /* Mainpage */
@@ -1033,7 +1033,7 @@ position:absolute;
     text-transform: uppercase;
   }
   
-  .Mainpage p{
+  .Mainpage p {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: .75em;
@@ -1142,7 +1142,6 @@ position:absolute;
     position: relative;
     display: block;
     width: 250px;
-    }
   }
 
   .site-footer
@@ -1160,6 +1159,7 @@ position:absolute;
     margin-right:0;
     font-weight:600;
   }
+}
 
 /* End Of Responsive */
 
