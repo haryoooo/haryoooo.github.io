@@ -915,7 +915,7 @@ ion-icon {
 .btn {
   background: #fff;
   font-weight: 500;
-  color: #959595;
+  color: #cacaca;
   border: none;
   padding: 10px 20px;
   border-radius: 3px;
@@ -929,7 +929,7 @@ ion-icon {
 }
 
 .btn:hover {
-  color: #b6b6b6;
+  color: #cacaca;
   box-shadow: 0 7px 14px rgba(175, 175, 175, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
 }
 
