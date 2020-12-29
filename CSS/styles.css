@@ -990,7 +990,7 @@ position:absolute;
 
 /* Responsive */
 
-@media (max-width:480px) {
+@media (max-width:767px) {
 
   .Mainpage, .Resume {
     margin: 0;
@@ -1159,6 +1159,7 @@ position:absolute;
     margin-right:0;
     font-weight:600;
   }
+
 }
 
 /* End Of Responsive */
