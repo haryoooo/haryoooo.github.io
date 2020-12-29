@@ -996,10 +996,6 @@ position:absolute;
     margin: 0;
   }
 
-}
-
-@media (max-width:767px) {
-
   h1 {
     font-size: 26px;
   }
