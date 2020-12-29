@@ -695,6 +695,7 @@ section {
 
 .line-art-top{
   position: absolute;
+  top:0;
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(90deg);
           transform: translateX(-50%) rotate(90deg);
@@ -703,6 +704,7 @@ section {
 
 .line-art-bottom{
   position: absolute;
+  bottom:0;
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(90deg);
           transform: translateX(-50%) rotate(90deg);
@@ -713,6 +715,7 @@ section {
 .line-art-left{
   position: absolute;
   top:50%;
+  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin-left: 5px;
@@ -721,6 +724,7 @@ section {
 .line-art-right{
   position: absolute;
   top:50%;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin-right: 5px;
