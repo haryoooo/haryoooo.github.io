@@ -992,10 +992,6 @@ position:absolute;
 
 @media (max-width:767px) {
 
-  .Mainpage, .Resume {
-    margin: 0;
-  }
-
   h1 {
     font-size: 26px;
   }
