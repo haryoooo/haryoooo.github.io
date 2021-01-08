@@ -317,7 +317,6 @@ h4, h6 {
   font-weight: 400;
 }
 
-
 /* Scroll Top */ 
 
 #myBtn {
@@ -376,6 +375,7 @@ transform: scaleX(-1);
 
 .flip > .front, .flip > .back {
   display: block;
+  justify-content: center;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-duration: 0.5s;
   transition-property: transform, opacity;
@@ -530,7 +530,8 @@ transform: scaleX(-1);
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: #aaa;
+  
+  opacity: 0.75;
 }
 
 /* Number text (1/3 etc) */
@@ -592,6 +593,7 @@ transform: scaleX(-1);
 
 /* ======== Resume Page ======== */
 
+
 #About h4 {
   padding-top: 15px;
 }
@@ -631,11 +633,22 @@ transform: scaleX(-1);
   font-weight: 400;
 }
 
-.Resume .jumbotron {
+.cover {
     height: 650px;
     background-size: cover;
     background-image: url(../PIC/fog.jpg);
     margin-bottom: 0;
+}
+
+.wrapper {
+  text-align: center;
+  margin: auto;
+  height: 500px;
+  width: 500px;
+}
+
+.arrow i{
+  margin-right: 10px;
 }
 
 img.hover-shadow {
@@ -693,7 +706,7 @@ section {
 
 /* LINE ART */
 
-.line-art-top{
+/* .line-art-top{
   position: absolute;
   top:0;
   left: 50%;
@@ -743,7 +756,7 @@ section {
 .line-art-left div:nth-child(1), .line-art-left div:nth-child(2), .line-art-left div:nth-child(3), .line-art-left div:nth-child(4),
 .line-art-right div:nth-child(1), .line-art-right div:nth-child(2), .line-art-right div:nth-child(3), .line-art-right div:nth-child(4){
   margin: 5px;
-}
+} */
 
 /* End Of Line Art */
 
@@ -775,7 +788,7 @@ section {
 /* 
 ion-icon {
     font-size: 21px;
-    position: absolute;
+    
 } */
 
 .cv-download {
@@ -939,27 +952,6 @@ ion-icon {
 
 /* End of Input Contact */
 
-/* Modal Popup Maps */
-
-.map-container-9,
-.map-container-10,
-.map-container-11 {
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
-}
-.map-container-9 iframe,
-.map-container-10 iframe,
-.map-container-11 iframe{
-left:0;
-top:50;
-height:100%;
-width:100%;
-position:absolute;
-}
-
-/* End Of Modal Popup Maps */
 
 /* Footer Experience */
 

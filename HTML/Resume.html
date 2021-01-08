@@ -11,13 +11,14 @@
     <link rel="shotrcut icon" href="../PIC/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Font Navbar -->
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <!-- End Link FOnt Navbar -->
+
       <title>Resume</title>
       </head>
     <body>
 
-    <!-- Link Font Navbar -->
-    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-    <!-- End Link FOnt Navbar -->
 
     <!-- Navbar -->
     <div id="mySidenav">
@@ -36,9 +37,8 @@
     <!-- End of Navbar -->
 
     <!-- Jumbotron -->
-    <div class="Resume">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container text-center">
+      <div class="cover">
+        <div class="wrapper">
           <div class="box">
             <h1> H </h1> <!-- name first char -->
           </div>
@@ -46,7 +46,6 @@
           <h4 class="tagline">Professional Dreamer</h4>
         </div>
       </div>
-    </div>  
     <!-- End of Jumbotron -->  
 
     <!-- ABOUT -->
@@ -54,7 +53,7 @@
         <div class="container">
             <div class="row">
               <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">About</h1><!-- /. large title -->
-                <div class="col-lg-8 mb-4">
+                <div class="col-lg-8">
                   <div class="holder">
                       
                       <i class="fa i-list fa-pencil-square-o fa-3x" aria-hidden="true"></i>
@@ -87,7 +86,8 @@
                       </div>
 
                         <div class="col-lg-4">
-                          <!-- draw line art -->
+                          <div class="holder texture">
+                            <!-- draw line art -->
                           <div class="line-art-top">
                             <div></div>
                             <div></div>
@@ -116,36 +116,13 @@
                             <div></div>
                         </div>
                         <!-- /.right line -->
-                          <div class="holder texture">
                                 <img src="../PIC/haryo2.JPG"  width="90%" class="rounded-circle hover-shadow">
                                       <div class="introduce">
                                             <h6>Name: Haryo Novianto</h6>
                                             <h6>Age: 25 Years Old</h6>
                                             <h6>Nationality: Indonesian</h6>
                                             <h6>Address:Jl.Mawaddah 4 Blok N2 No 5, Kelapa Dua, Tangerang</h6>
-                                            <a href="#"><h6 data-toggle="modal" data-target="#modalRegular">Open Map</h6></a>
-                           
-                                              <!-- Modal: Name
-                                              <div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                                                aria-hidden="true">
-                                                <div class="modal-dialog modal-lg" role="document">
-                                              
-                                                  <!- Content-->
-                                                  <!-- <div class="modal-content"> -->
-                                              
-                                                    <!--Body-->
-                                                    <!-- <div class="modal-body mb-0 p-0"> -->
-                                              
-                                                      <!--Google map-->
-                                                      <!-- <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
-                                                        <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20mawaddah%20IV%20+(My%20Business%20Name)&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"frameborder="0" style="border:0" allowfullscreen></iframe>
-                                                      </div>
-                                              
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div> -->
-
+                                          
                                       <div class="socmed">
                                             <a href="#" class="fa fa-twitter mr-3"></a>
                                             <a href="#" class="fa fa-facebook mr-3"></a>
@@ -318,8 +295,8 @@
                 </div>
               </div>
 
-              <div class="mt-5">
-                <i class="fa fa-chevron-left mr-4" onclick="plusDivs(-1)"></i>
+              <div class="arrow mt-5">
+                <i class="fa fa-chevron-left" onclick="plusDivs(-1)"></i>
                 <i class="fa fa-chevron-right" onclick="plusDivs(1)"></i>
               </div>
 
