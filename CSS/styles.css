@@ -324,6 +324,10 @@ h4, h6 {
   font-weight: 400;
 }
 
+.bio p {
+  word-spacing: 0px;
+}
+
 /* Scroll Top */ 
 
 #myBtn {
@@ -641,7 +645,7 @@ transform: scaleX(-1);
 }
 
 .cover {
-    height: 650px;
+    height: 450px;
     background-size: cover;
     background-image: url(../PIC/fog.jpg);
     margin-bottom: 0;
@@ -649,9 +653,7 @@ transform: scaleX(-1);
 
 .wrapper {
   text-align: center;
-  padding: 100px auto;
   margin: auto;
-  height: 500px;
 }
 
 .arrow i{
@@ -711,9 +713,9 @@ section {
   font-family: Montserrat, sans-serif;
 }
 
-/* LINE ART */
+/* LINE ART
 
-/* .line-art-top{
+.line-art-top{
   position: absolute;
   top:0;
   left: 50%;
