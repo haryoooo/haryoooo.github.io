@@ -84,9 +84,9 @@ h4, h6 {
   font-weight: bold;
 }
 
-/* .Mainpage a:hover {
-  border-bottom: 1px solid #fff;
-} */
+.Mainpage a:hover {
+  text-decoration: none;
+}
 
 .Mainpage h1{
   font-size: 2em; 
