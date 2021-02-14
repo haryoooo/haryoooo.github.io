@@ -988,32 +988,32 @@ ion-icon {
 @media (max-width:767px) {
 
   h1 {
-    font-size: 26px;
-  }
-
-  h2 {
     font-size: 24px;
   }
 
-  h3 {
+  h2 {
     font-size: 22px;
   }
 
-  h4 {
+  h3 {
     font-size: 20px;
   }
 
-  h5 {
+  h4 {
     font-size: 18px;
   }
 
-  h6 {
+  h5 {
     font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
   }
 
   /* Mainpage */
   
-  .Mainpage .Resume {
+  .Mainpage .Profile {
     margin: 0;
   }
 
@@ -1097,7 +1097,7 @@ ion-icon {
       transform: none;
   }
 
-  /* Resume */
+  /* Profile */
 
   .main-title {
     font-size: 38px;
@@ -1129,4 +1129,4 @@ ion-icon {
 
 
 
-/* ======== End Of Resume Page ======== */
+/* ======== End Of Profile Page ======== */
