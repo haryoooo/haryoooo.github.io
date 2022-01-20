@@ -1,15 +1,12 @@
 // Navbar Function
 
 function openNav() {
-
-  let sideNav = document.querySelector(".sidenav")
+  let sideNav = document.querySelector(".sidenav");
 
   if (sideNav.style.display === "block") {
-    sideNav.style.display = "none"
-  }
-
-  else {
-    sideNav.style.display = "block"
+    sideNav.style.display = "none";
+  } else {
+    sideNav.style.display = "block";
   }
 }
 
@@ -19,12 +16,15 @@ function openNav() {
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 1500px from the top of the document, show the button
-window.onscroll = function() {
-  scrollFunction()
-}
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+  if (
+    document.body.scrollTop > 2000 ||
+    document.documentElement.scrollTop > 2000
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -56,12 +56,12 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
@@ -69,17 +69,21 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
 /* End Of Image Gallery */
@@ -89,32 +93,34 @@ function showSlides(n) {
 AOS.init({
   offset: 600, // offset (in px) from the original trigger point
   delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000 // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
 });
 
 /* End of Animation On Scroll */
 
-
-// Skill Slider 
+// Skill Slider
 
 var slideIndex = 1;
 showDivs(slideIndex);
 
-
 // Next/previous controls
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  showDivs((slideIndex += n));
 }
 
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  if (n > x.length) {
+    slideIndex = 1;
   }
-  x[slideIndex-1].style.display = "block";  
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
 }
 
 // End of Skill slider

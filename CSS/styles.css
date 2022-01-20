@@ -21,7 +21,7 @@
 
 .sidenav {
   display: none;
-  height: 300px;
+  min-height: 230px;
   width: 200px;
   position: fixed;
   z-index: 2;
@@ -661,6 +661,7 @@ img.hover-shadow {
   
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.03); 
 }
 
 .box {
@@ -833,6 +834,7 @@ ion-icon {
     display: inline-block;
     text-decoration: none;
     color: #101010;
+    transform: scale(1.05); 
 }
 
 /* End of socmed */
