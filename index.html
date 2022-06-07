@@ -27,75 +27,431 @@
       <div class="sidenav">
         <!-- <a href="../index.html">Mainpage</a> -->
         <!-- <a href="../HTML/Biography.html">Biography</a> -->
-        <a href="../HTML/Profile.html">Profile</a>
-        <a href="../HTML/Profile.html#Projects">Projects</a>
+        <a href="../index.html">Profile</a>
+        <a href="#Projects">Projects</a>
       </div>
 
-      <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
         <i class="fa fa-bars"></i>
-      </a>
+        </a>
+
     </div>
     <!-- End of Navbar -->
 
-    <!-- Cover -->
-    <!-- <section class="Mainpage">
-      <div class="col-sm-6">
-        <h1>Welcome to my page</h1>
-        <p>This is a mainpage of <span>Haryo Novianto</span></p>
-        <a href="../HTML/Profile.html#About"
-          ><button data-hover="About Me"><div>Learn More</div></button></a
-        >
+    <!-- Jumbotron -->
+      <div class="cover">
+        <div class="wrapper">
+          <div class="box">
+            <h1> H </h1> <!-- name first char -->
+          </div>
+          <h2 class="main-title">Haryo Novianto</h2>
+          <h4 class="tagline">Front End Developer</h4>
+        </div>
       </div>
-    </section> -->
-    <!-- End of Cover -->
+    <!-- End of Jumbotron -->  
 
-    <!-- Site footer -->
-    <!-- <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">
-              My name is Haryo Novianto, This is my Web Pages and this Web Pages
-              describe a lot about me and what i'm capable of. I'm a beginner
-              who's eager to learn more about Tech and everything Related
-            </p>
+    <!-- ABOUT -->
+    <section id="About">
+        <div class="container">
+            <div class="row">
+              <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">About</h1><!-- /. large title -->
+                <div class="col-lg-8 mb-3">
+                  <div class="holder">
+                      
+                      <i class="fa i-list fa-pencil-square-o fa-3x" aria-hidden="true"></i>
+                      <h3>About</h3>
+                        My name is Haryo Novianto, Have strong understanding in Web development environment such as 
+                        <br>( HTML, CSS, Javascript, React.js, Next.js, Express.js ) and specialized in Front End development. 
+                        <br>Now, i’m working as a Frontend Developer at DOOgether
+                    
+                            <div class="row">
+                              <div class="col-md-8">
+                              <h4>Motto</h4>
+                              <p>
+                                  Never tired of learning something new
+                              </p>
+                              </div>
+                            </div>
+                            
+                          <div class="row">
+                            <div class="col-md-8">
+                            <h4> Hobbies </h4>
+                            <p> Traveling | Movies | Skill Development </p>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-8">
+                            <h4> Personal Info </h4>
+                            <p>Hard Worker | Deep Learner | Well-Organized</p>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                        <div class="col-lg-4">
+                          <div class="holder texture">
+                                <img src="../PIC/haryo2.JPG"  width="90%" class="rounded-circle hover-shadow">
+                                      <div class="introduce">
+                                            <h6>Name: Haryo Novianto</h6>
+                                            <h6>Age: 
+                                            <script>
+                                              var birthday = new Date(1995, 11, 03)
+                                              let ageDifMs = Date.now() - birthday.getTime();
+                                              var ageDate = new Date(ageDifMs); // miliseconds from epoch
+                                              var result = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+                                              document.write(result)
+                                            </script></h6>
+                                            <h6>Address: Jl.Mawaddah 4 Blok N2 No 5, Kelapa Dua, Tangerang</h6>
+                                            <h6>E-mail: haryoharyo2@gmail.com</h6>
+                                            <h6>Phone: +62-8211-678-2890</h6>
+                                          
+                                        <div class="socmed">
+                                            <a href="https://twitter.com/home" class="fa fa-twitter mr-3"></a>
+                                            <a href="https://www.instagram.com/haryooo_/" class="fa fa-instagram mr-3"></a>
+                                            <a href="https://github.com/haryoooo" class="fa fa-github mr-3"></a>
+                                            <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+                                            <a href="../PIC/CV.pdf" class="fa fa-file-text tooltip-cl cv-download" data-tooltip="Download CV"></a>
+                                            <!-- <a class="tooltip-cl cv-download" data-tooltip="Download CV" href="#cv-url"><ion-icon name="download-outline" data-toggle="modal" data-target="#exampleModal"></ion-icon></a> -->
+                                        </div>
+                                          
+                                          
+                                        </div>
+                                      </div>
+            
+                                    </div>
+                                </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+      <!-- END OF ABOUT -->
+
+      <!-- EDUCATION -->
+      <section id="Education">
+        <div class="container">
+
+          <div class="row">
+            <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">Education</h1><!-- /. large title -->
+            <div class="col-lg-4 mb-5">
+              
+              <div class="holder texture">
+              <i class="fa i-list fa-star-o fa-3x" aria-hidden="true"></i>
+              
+              <h3>Skills</h3>
+              <div class="skill-holder">
+                <div class="mySlides">
+                <h6 style="text-align: right;">Hard Skills</h6>
+                <div class="text-bar">
+                  <span class="Left">85%</span>
+                  <span class="Right">CSS</span>
+                </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="text-bar">
+                  <span class="Left">90%</span>
+                  <span class="Right">HTML</span>
+                  </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <div class="text-bar">
+                <span class="Left">85%</span>
+                <span class="Right">JavaScript</span>
+                </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> 
+
+              <div class="text-bar">
+                <span class="Left">85%</span>
+                <span class="Right">ReactJS</span>
+                </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                  <div class="progress-bar bg-dark" role="progressbar" style="max-width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+              <div class="mySlides">
+                  <h6 style="text-align: right;">Hard Skills</h6>
+
+                  <div class="text-bar">
+                    <span class="Left">75%</span>
+                    <span class="Right">React Native</span>
+                    </div>
+                    <div class="progress justify-content-end" style="height: 3px;">
+                    <div class="progress-bar bg-dark" role="progressbar" style="max-width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> 
+    
+                  <div class="text-bar">
+                    <span class="Left">75%</span>
+                    <span class="Right">NextJS</span>
+                    </div>
+                  <div class="progress justify-content-end" style="height: 3px;">
+                  <div class="progress-bar bg-dark" role="progressbar" style="max-width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+  
+                <div class="text-bar">
+                  <span class="Left">70%</span>
+                  <span class="Right">ExpressJS</span>
+                  </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="text-bar">
+                  <span class="Left">80%</span>
+                  <span class="Right">Git Version Control</span>
+                  </div>
+                  <div class="progress justify-content-end" style="height: 3px;">
+                  <div class="progress-bar bg-dark" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div> 
+
+                  </div>
+
+              <div class="mySlides">
+                <h6 style="text-align: right;">Personal Skills</h6>
+
+                <div class="text-bar">
+                  <span class="Left">80%</span>
+                  <span class="Right">Analytical</span>
+                  </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+  
+                <div class="text-bar">
+                  <span class="Left">80%</span>
+                  <span class="Right">Problem Solving</span>
+                  </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <div class="text-bar">
+                <span class="Left">80%</span>
+                <span class="Right">Well-Organized</span>
+                </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <div class="text-bar">
+                <span class="Left">80%</span>
+                <span class="Right">Time Management</span>
+                </div>
+                <div class="progress justify-content-end" style="height: 3px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="max-width: 80%;" aria-valuenow="60d" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> 
+                </div>
+              </div>
+
+              <div class="arrow mt-5">
+                <i class="fa fa-chevron-left" onclick="plusDivs(-1)"></i>
+                <i class="fa fa-chevron-right" onclick="plusDivs(1)"></i>
+              </div>
+
+            </div>
+
+            </div>
+
+            
+          <div class="col-lg-8 ">
+            <div class="holder">
+              <i class="fa i-list fa-lightbulb-o fa-3x" aria-hidden="true"></i>
+              
+              <h3>Education</h3>
+
+              <div class="time-item">
+                <div class="circle">
+                  <h5>Telkom University</h5></div>
+                  <div class="time-year">
+                    2014 - 2017
+                </div>
+                  <h6>Major Computer Engineering</h6>
+                  <p>GPA : 3.07</p>
+              </div>
+                
+              <div class="time-item">
+                <div class="circle">
+                <h5>Binus University</h5></div>
+                <div class="time-year">
+                  2017 - 2019
+                </div>
+                <h6>Major Information System</h6>
+                <p>GPA : 3.29</p>
+              </div>
+            </div>
           </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Skills</h6>
-            <ul class="footer-links">
-              <li><a data-content="Javascript">Javascript</a></li>
-              <li><a data-content="ReactJS">ReactJS</a></li>
-              <li><a data-content="React Native">React Native</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Pages</h6>
-            <ul class="footer-links">
-              <!-- <li>
-                <a href="../HTML/Biography.html" data-content="Biography"
-                  >Biography</a
-                >
-              </li> -->
-              <li>
-                <a href="../HTML/Profile.html" data-content="Profile"
-                  >Profile</a
-                >
-              </li>
-              <li>
-                <a href="../HTML/Profile.html#Projects" data-content="Projects"
-                  >Projects</a
-                >
-              </li>
-            </ul>
           </div>
         </div>
-        <hr />
-      </div>
+        </section>
+        <!-- END OF EDUCATION -->
 
+        <!-- EXPERIENCE -->
+        <section id="work">
+          <div class="container">
+            <div class="row">
+              <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">Experience</h1><!-- /. large title -->
+              <div class="col-sm-12">
+                
+                <div class="holder">
+                  <i class="fa i-list fa-file-text-o fa-3x" aria-hidden="true"></i>
+                  
+                  <h3>Work Experience</h3>
+                  <div class="time-item">
+                  
+                  <div class="circle">
+                  <h5>PT. Putra Perdana International</h5>
+                  </div>
+
+                <div class="time-year">
+                  July 2018 - October 2018
+                </div>
+
+                  <h6>System Engineer</h6>
+                  <ul class="exp">
+                    <li>Deep learn and exploring about Company Product “Extrahop”</li>
+                    <li>Vmware esxi setup & Installation for server</li>
+                    <li>Developing Internal Website that integrated the company project using an API integration</li>
+                    <li>Operate SQL database InnoDB system with Linux Environment</li>
+                  </ul>
+                  </div>
+
+                  <div class="time-item">
+                  <div class="circle">
+                  <h5>PT. Innovasi Sarana Grafindo</h5></div>
+                  <div class="time-year"> 
+                    Februari 2019 - August 2021
+                  </div>
+                  <h6>Technical & Production Support</h6>
+                  <ul class="exp">
+                    <li>Forecast quantity of every digital product</li>
+                    <li>Maintain minimum stock of every digital product</li>
+                    <li>Maintain work control of every digital product delivery schedule</li>
+                    <li>QoC Digital Signage & Interactive Flat Panel product based on standard procedure form list</li>
+                    <li>Review QoC Form list Digital Product based on product development to maintain the quality of company product</li>
+                    <li>Operate company CMS Web Apps to deploy content for digital signage product</li>
+                  </ul>
+                  </div>
+
+                  <div class="time-item">
+                    <div class="circle">
+                    <h5>DOOgether</h5></div>
+                    <div class="time-year"> 
+                      August 2021 - Present
+                    </div>
+                    <h6>Front End Developer</h6>
+                    <ul class="exp">
+                      <li>Bug Fixing bottleneck Bug based on report</li>
+                      <li>Convert design from figma into actual code</li>
+                      <li>Feature Development based on sprint using React JS or Next JS</li>
+                      <li>Refactor code to be more maintainable</li>
+                      <li>Optimizing website performance based on lighthouse insight</li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+    </section>
+    <!-- END OF EXPERIENCE -->
+              
+    <!-- Profile -->
+    <section id="Projects">
       <div class="container">
+        <div class="row">
+          <h1 class="section-big-title d-none d-md-block" data-aos="fade-right">Projects</h1><!-- /. large title -->
+          <div class="col">
+           
+            <div class="holder texture">
+              
+              <i class="fa i-list fa-file-code-o fa-3x" aria-hidden="true"></i>
+              
+            <h3>Projects</h3>
+
+            <div class="row">
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../PIC/calculator.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Calculator</h5>
+                  <p class="card-text">Simple Project that created by me focusing at Vanilla JS DOM and CSS Animation</p>
+                  <a href="https://haryoooo.github.io/Simple-Calculator/" class="btn btn-dark font-weight-bold">Go To Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-md-4">
+              <div class="card">
+                <img src="../PIC/todolist.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">To-Do-List App</h5>
+                  <p class="card-text">In this project you could create a simple todolist. This is my first project using ReactJS</p>
+                  <a href="https://react-todolist-79e6a.web.app/" class="btn btn-dark font-weight-bold">Go To Project</a>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://wallpaperaccess.com/full/701617.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Weather Web App</h5>
+                  <p class="card-text">This project is simple weather app that display information about current weather in your region</p>
+                  <a href="https://loving-snyder-9979a5.netlify.app/" class="btn btn-dark font-weight-bold">Go To Projects</a>
+                </div>
+              </div>
+              </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../PIC/pokeball.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Pokedex Web App</h5>
+                  <p class="card-text">Pokedex is project that display a detail info about pokemon that fetched from pokeAPI</p>
+                  <a href="https://pokedex-project-fcf47.web.app/" class="btn btn-dark font-weight-bold">Go To Project</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../PIC/logo_starwars.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="font-weight-bold">Starwars Data Library</h5>
+                  <p class="card-text">This project contains an information about starwars that fetch from swapi.dev</p>
+                  <a href="https://starwars-data-library.web.app/" class="btn btn-dark font-weight-bold">Go To Project</a>
+                </div>
+              </div>
+            </div>
+
+    <!-- END OF Profile  -->
+
+    
+    <!------ Include the above in your HEAD tag ---------->
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+      <script src="../JS/scripts.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init();</script>
+      <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  </body>
+</html>
+
+      <!-- <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">
@@ -138,7 +494,7 @@
     </footer> -->
 
     <!-- End Footer -->
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
       integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
       crossorigin="anonymous"
@@ -148,11 +504,11 @@
       integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
       crossorigin="anonymous"
     ></script>
-    <script src="../JS/scripts.js"></script>
+    <script src="../JS/scripts.js"></script> -->
     <!------ Include the above in your HEAD tag ---------->
-    <link
+    <!-- <link
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
   </body>
-</html>
+</html> -->
