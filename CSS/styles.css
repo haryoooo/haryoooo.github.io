@@ -21,7 +21,7 @@
 
 .sidenav {
   display: none;
-  min-height: 230px;
+  min-height: 180px;
   width: 200px;
   position: fixed;
   z-index: 2;
